@@ -26,12 +26,12 @@ Documentation evolves with the systems it describes and must remain synchronized
 
 | Content | Canonical Home |
 |---------|----------------|
-| Organization mission, vision, platform scope, roadmap | `ORGANIZATION_CHARTER.md` |
-| Governance principles, decision-making, review cadence | `GOVERNANCE.md` |
+| Organization mission, vision, platform scope, roadmap | [`ORGANIZATION_CHARTER.md`](ORGANIZATION_CHARTER.md) |
+| Governance principles, decision-making, review cadence | [`GOVERNANCE.md`](GOVERNANCE.md) |
 | Documentation conventions and writing standards | This document |
-| Organization-wide engineering decisions | Architecture Decision Records (ADRs) |
+| Architecture Decision Records (ADRs) | [`decisions/`](decisions/) |
 | Repository-specific setup, development, usage | That repository's own `README.md` |
-| Public organization overview | `.github/profile/README.md` |
+| Public organization overview | [`.github` profile README](https://github.com/macro-evidence/.github/blob/main/profile/README.md) |
 
 A topic should have exactly one canonical owner. Other documents reference that owner instead of duplicating its content.
 
@@ -53,7 +53,7 @@ A topic should have exactly one canonical owner. Other documents reference that 
 
 Repository, module, dataset, directory, and variable naming standards are introduced only when they become necessary—beginning with MDO's schema and engineering work—rather than being defined speculatively.
 
-This section evolves incrementally and is updated through a **MINOR** version bump (see `GOVERNANCE.md`).
+This section evolves incrementally and is updated through a **MINOR** version bump (see [`GOVERNANCE.md`](GOVERNANCE.md)).
 
 ---
 

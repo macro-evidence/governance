@@ -1,6 +1,6 @@
 # Macro Evidence — Organization & Platform Charter
 
-> Version 1.0.1 · Active · Last updated 2026-07-24
+> Version 1.1.0 · Active · Last updated 2026-07-24
 > Supersedes the originally drafted MDO summary and the Macro Evidence/MDO consolidated summary — both are consolidated here as the single canonical version.
 
 > Evidence infrastructure for macroeconomic intelligence, built one disciplined decision at a time.
@@ -11,7 +11,7 @@
 
 ### Mission
 
-Macro Evidence exists to build professional data infrastructure that improves access to high-quality macroeconomic evidence through transparent engineering, reproducible data systems, and disciplined technical practices — not opinion or commentary.
+Macro Evidence exists to build professional data infrastructure that improves access to high-quality macroeconomic evidence through transparent engineering, reproducible data systems, and disciplined technical practices—not opinion or commentary.
 
 ### Vision
 
@@ -55,16 +55,16 @@ It is a long-term data engineering platform that acquires, processes, organizes,
 - Data warehouse foundations
 - Analytics-ready datasets
 - Workflow automation and orchestration
-- Architectural decision records and implementation logs
+- Architectural Decision Records (ADRs) and implementation logs
 
 ### Engineering Standards
 
-- Structured project governance (see the Governance Charter)
-- Standardized naming conventions (see Documentation Standards)
+- Organization governance (see [`GOVERNANCE.md`](GOVERNANCE.md))
+- Standardized naming conventions (see [`DOCUMENTATION_STANDARDS.md`](DOCUMENTATION_STANDARDS.md) §5)
 - Modular repository organization
-- Reproducible development environments using free-tier infrastructure where practical
-- Conventional Commits (see Documentation Standards)
-- Governance-driven architectural reviews
+- Reproducible development environments using free-tier infrastructure
+- Conventional Commits (see [`DOCUMENTATION_STANDARDS.md`](DOCUMENTATION_STANDARDS.md) §6)
+- Architectural review cadence defined in [`GOVERNANCE.md`](GOVERNANCE.md)
 - Continuous complexity management
 
 ### Technical Foundation
@@ -98,7 +98,7 @@ Each stage requires the previous stage to be completed, documented, and accepted
 |---|---|---|
 | Organization | Macro Evidence | Governance, brand, accounts, sponsors |
 | Flagship platform | Macro Data Observatory | Under active development |
-| Future products | Analytical applications, research tools, forecasting services, APIs, educational products | Planned only — repositories are created only after governance approval and platform maturity |
+| Future products | Analytical applications, research tools, forecasting services, APIs, educational products | Roadmap only — no repository until MDO clears its first milestone |
 
 ---
 
@@ -121,18 +121,19 @@ Each stage requires the previous stage to be completed, documented, and accepted
 
 Macro Evidence is intended to mature into an ecosystem of professionally engineered products centered on trustworthy macroeconomic data infrastructure, with Macro Data Observatory serving as the foundational platform.
 
-As MDO matures through structured warehousing, automation, analytics, and forecasting capabilities, additional products are developed on top of that foundation—not alongside it. Every future platform or repository is expected to satisfy the governance principles defined by the Governance Charter before implementation begins.
+As MDO matures through structured warehousing, automation, analytics, and forecasting capabilities, additional products are built on top of that foundation—not alongside it. Every future platform or repository is evaluated against the decision criteria defined in [`GOVERNANCE.md`](GOVERNANCE.md) before it is created.
 
 ---
 
 ## Changelog
 
-### 1.0.1 (2026-07-24)
+### 1.1.0 (2026-07-24)
 
-- Aligned engineering review language with Governance Charter v1.1.
-- Replaced fixed review cadence with governance-driven architectural reviews.
-- Improved wording for consistency and long-term maintainability.
-- Editorial refinements only; no change to organizational mission or platform direction.
+- Aligned cross-references with the dedicated Governance repository.
+- Expanded the MDO platform description and clarified its role as Macro Evidence's flagship platform.
+- Updated engineering standards to reference `GOVERNANCE.md` and `DOCUMENTATION_STANDARDS.md`.
+- Refined roadmap wording and long-term platform governance for consistency with the Governance Charter.
+- Improved organizational wording and document consistency without changing project direction.
 
 ### 1.0.0 (2026-07-23)
 
