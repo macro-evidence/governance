@@ -28,6 +28,6 @@ Why this decision was selected over the alternatives.
 Expected benefits, trade-offs, risks, and follow-up implications.
 ```
 
-## Current state
+## Decisions
 
-Empty. The first record will accompany the first non-trivial technical decision in Macro Data Observatory's engineering — not before.
+- [0001. Single flat table for Stage 1 ETL, not a dimensional model](0001-single-table-schema-for-stage-1-etl.md)
