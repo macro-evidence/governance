@@ -1,6 +1,6 @@
 # Macro Evidence — Documentation Standards
 
-> Version 1.1.0 · Active · Last updated 2026-07-24
+> Version 1.2.0 · Active · Last updated 2026-08-08
 
 ---
 
@@ -30,6 +30,7 @@ Documentation evolves with the systems it describes and must remain synchronized
 | Governance principles, decision-making, review cadence | [`GOVERNANCE.md`](GOVERNANCE.md) |
 | Documentation conventions and writing standards | This document |
 | Architecture Decision Records (ADRs) | [`decisions/`](decisions/) |
+| Trademark, brand, and organizational identity policy | [`TRADEMARKS.md`](TRADEMARKS.md) |
 | Repository-specific setup, development, usage | That repository's own `README.md` |
 | Public organization overview | [`.github` profile README](https://github.com/macro-evidence/.github/blob/main/profile/README.md) |
 
@@ -79,6 +80,9 @@ Guidelines:
 ---
 
 ## Changelog
+
+- **1.2.0** (2026-08-08)
+  - Added Documentation Ownership entry for `TRADEMARKS.md`.
 
 - **1.1.0** (2026-07-24)
   - Renamed **Voice** to **Writing Principles**.

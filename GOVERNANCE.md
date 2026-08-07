@@ -1,6 +1,6 @@
 # Macro Evidence — Governance & Decision-Making Charter
 
-> Version 1.2.0 · Active · Last updated 2026-07-24
+> Version 1.3.0 · Active · Last updated 2026-08-08
 
 ---
 
@@ -78,6 +78,7 @@ When guidance overlaps, higher-level documents take priority.
 | Organization mission, vision, scope | [`ORGANIZATION_CHARTER.md`](ORGANIZATION_CHARTER.md) |
 | Organization governance and decision-making | [`GOVERNANCE.md`](GOVERNANCE.md) |
 | Documentation standards and conventions | [`DOCUMENTATION_STANDARDS.md`](DOCUMENTATION_STANDARDS.md) |
+| Trademark, brand, and organizational identity | [`TRADEMARKS.md`](TRADEMARKS.md) |
 | Repository policies | Repository-specific governance documents |
 | Repository implementation details | Repository `README.md` and technical documentation |
 
@@ -87,7 +88,7 @@ Repository documentation may extend organization standards but must never contra
 
 ## 7. Versioning Foundational Documents
 
-This charter `GOVERNANCE.md`, [`ORGANIZATION_CHARTER.md`](ORGANIZATION_CHARTER.md), and [`DOCUMENTATION_STANDARDS.md`](DOCUMENTATION_STANDARDS.md) are versioned independently using Semantic Versioning (`MAJOR.MINOR.PATCH`).
+This charter `GOVERNANCE.md`, [`ORGANIZATION_CHARTER.md`](ORGANIZATION_CHARTER.md), [`DOCUMENTATION_STANDARDS.md`](DOCUMENTATION_STANDARDS.md), and [`TRADEMARKS.md`](TRADEMARKS.md) are versioned independently using Semantic Versioning (`MAJOR.MINOR.PATCH`).
 
 | Version | Meaning |
 |----------|---------|
@@ -102,6 +103,10 @@ Governance documents are never silently modified.
 ---
 
 ## Changelog
+
+### 1.3.0 (2026-08-08)
+
+- Added `TRADEMARKS.md` to the Governance Hierarchy and to the list of independently versioned foundational documents.
 
 ### 1.2.0 (2026-07-24)
 
