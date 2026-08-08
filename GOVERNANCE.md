@@ -1,6 +1,6 @@
 # Macro Evidence — Governance & Decision-Making Charter
 
-> Version 1.3.0 · Active · Last updated 2026-08-08
+> Version 1.3.1 · Active · Last updated 2026-08-08
 
 ---
 
@@ -63,8 +63,6 @@ Each ADR records:
 
 ADRs are maintained in this repository under [`decisions/`](decisions/). The ADR format is defined in [`decisions/README.md`](decisions/README.md).
 
-No ADRs exist yet. The first will accompany the first non-trivial engineering decision within Macro Data Observatory.
-
 ---
 
 ## 6. Governance Hierarchy
@@ -103,6 +101,10 @@ Governance documents are never silently modified.
 ---
 
 ## Changelog
+
+### 1.3.1 (2026-08-08)
+
+- Removed stale "No ADRs exist yet" text — 7 ADRs are on record as of this correction, and a live count in prose would itself go stale over time; `decisions/` is the source of truth.
 
 ### 1.3.0 (2026-08-08)
 
