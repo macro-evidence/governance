@@ -35,3 +35,4 @@ Expected benefits, trade-offs, risks, and follow-up implications.
 - [0003. Generalize the pipeline runner for pluggable sources](0003-generalized-pipeline-runner.md)
 - [0004. IMF source starts on DataMapper, not SDMX](0004-imf-datamapper-discovery-phase.md)
 - [0005. Widen validation's year ceiling for forecast-carrying sources](0005-widen-validation-year-ceiling.md)
+- [0006. Second IMF indicator: inflation, average consumer prices (PCPIPCH)](0006-second-imf-indicator-inflation.md)
