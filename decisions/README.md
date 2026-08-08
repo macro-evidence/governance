@@ -36,3 +36,4 @@ Expected benefits, trade-offs, risks, and follow-up implications.
 - [0004. IMF source starts on DataMapper, not SDMX](0004-imf-datamapper-discovery-phase.md)
 - [0005. Widen validation's year ceiling for forecast-carrying sources](0005-widen-validation-year-ceiling.md)
 - [0006. Second IMF indicator: inflation, average consumer prices (PCPIPCH)](0006-second-imf-indicator-inflation.md)
+- [0007. Continuous integration via GitHub Actions](0007-continuous-integration.md)
