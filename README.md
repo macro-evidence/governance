@@ -25,3 +25,9 @@ This repository holds cross-cutting governance: decisions and conventions that a
 ## Code of Conduct, Contributing, Security
 
 Not duplicated here. This repository inherits the organization-wide defaults from [`macro-evidence/.github`](https://github.com/macro-evidence/.github).
+
+## License
+
+Licensed under [Creative Commons Attribution 4.0 International](LICENSE) (CC BY 4.0).
+
+This license governs the content in this repository. It does not itself grant rights to Macro Evidence's name, logos, or visual identity — see [`TRADEMARKS.md`](TRADEMARKS.md) for that separate policy.
