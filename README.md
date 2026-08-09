@@ -12,7 +12,7 @@
 | [GOVERNANCE.md](GOVERNANCE.md) | Governance principles, decision-making, repository hierarchy, ADRs, versioning |
 | [DOCUMENTATION_STANDARDS.md](DOCUMENTATION_STANDARDS.md) | Documentation principles, repository documentation, writing standards, naming conventions, Conventional Commits |
 | [TRADEMARKS.md](TRADEMARKS.md) | Trademark, brand, and organizational identity policy |
-| [decisions/](decisions/) | Architecture Decision Records (ADRs) for significant engineering decisions |
+| [decisions/](decisions/) | Cross-cutting Architecture Decision Records (ADRs) only — repository-specific ADRs live in that repository's own `decisions/` |
 
 ## Versioning
 

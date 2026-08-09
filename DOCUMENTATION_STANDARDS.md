@@ -1,6 +1,6 @@
 # Macro Evidence — Documentation Standards
 
-> Version 1.2.0 · Active · Last updated 2026-08-08
+> Version 1.3.0 · Active · Last updated 2026-08-09
 
 ---
 
@@ -29,7 +29,8 @@ Documentation evolves with the systems it describes and must remain synchronized
 | Organization mission, vision, platform scope, roadmap | [`ORGANIZATION_CHARTER.md`](ORGANIZATION_CHARTER.md) |
 | Governance principles, decision-making, review cadence | [`GOVERNANCE.md`](GOVERNANCE.md) |
 | Documentation conventions and writing standards | This document |
-| Architecture Decision Records (ADRs) | [`decisions/`](decisions/) |
+| Architecture Decision Records (ADRs) — repository-specific | That repository's own `decisions/` (e.g. [`macro-data-observatory/decisions/`](https://github.com/macro-evidence/macro-data-observatory/tree/main/decisions)) |
+| Architecture Decision Records (ADRs) — cross-cutting | [`decisions/`](decisions/) in this repository |
 | Trademark, brand, and organizational identity policy | [`TRADEMARKS.md`](TRADEMARKS.md) |
 | Repository-specific setup, development, usage | That repository's own `README.md` |
 | Public organization overview | [`.github` profile README](https://github.com/macro-evidence/.github/blob/main/profile/README.md) |
@@ -80,6 +81,9 @@ Guidelines:
 ---
 
 ## Changelog
+
+- **1.3.0** (2026-08-09)
+  - Split ADR ownership: repository-specific ADRs are owned by that repository's own `decisions/`; only cross-cutting ADRs are owned by this repository's `decisions/`. See `GOVERNANCE.md` 1.4.0 and `macro-data-observatory` decision 0008.
 
 - **1.2.0** (2026-08-08)
   - Added Documentation Ownership entry for `TRADEMARKS.md`.

@@ -1,6 +1,6 @@
 # Macro Evidence — Governance & Decision-Making Charter
 
-> Version 1.3.1 · Active · Last updated 2026-08-08
+> Version 1.4.0 · Active · Last updated 2026-08-09
 
 ---
 
@@ -61,7 +61,7 @@ Each ADR records:
 - Rationale
 - Consequences
 
-ADRs are maintained in this repository under [`decisions/`](decisions/). The ADR format is defined in [`decisions/README.md`](decisions/README.md).
+ADRs are recorded where the decision actually applies: repository-specific decisions live in that repository's own `decisions/` folder (e.g. [`macro-data-observatory/decisions/`](https://github.com/macro-evidence/macro-data-observatory/tree/main/decisions)); decisions that genuinely apply across multiple repositories or to the organization's structure itself are recorded in this repository under [`decisions/`](decisions/). The ADR format is defined in each location's own `decisions/README.md`.
 
 ---
 
@@ -101,6 +101,10 @@ Governance documents are never silently modified.
 ---
 
 ## Changelog
+
+### 1.4.0 (2026-08-09)
+
+- §5: ADRs now split by scope — repository-specific decisions live in that repository's own `decisions/`; only genuinely cross-cutting decisions stay in this repository. See `macro-data-observatory` decision 0008 for the full reasoning. All 7 prior ADRs moved to `macro-data-observatory/decisions/`, none having turned out to be cross-cutting on review.
 
 ### 1.3.1 (2026-08-08)
 
