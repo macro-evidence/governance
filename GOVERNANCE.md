@@ -1,6 +1,6 @@
 # Macro Evidence — Governance & Decision-Making Charter
 
-> Version 1.4.0 · Active · Last updated 2026-08-09
+> Version 1.4.1 · Active · Last updated 2026-08-20
 
 ---
 
@@ -53,15 +53,9 @@ Any decision affecting an existing public interface, schema, API, governance pri
 
 Non-trivial technical and organizational decisions are documented as Architecture Decision Records (ADRs).
 
-Each ADR records:
+Each ADR records the context, decision, and consequences of the decision.
 
-- Decision
-- Context
-- Alternatives considered
-- Rationale
-- Consequences
-
-ADRs are recorded where the decision actually applies: repository-specific decisions live in that repository's own `decisions/` folder (e.g. [`macro-data-observatory/decisions/`](https://github.com/macro-evidence/macro-data-observatory/tree/main/decisions)); decisions that genuinely apply across multiple repositories or to the organization's structure itself are recorded in this repository under [`decisions/`](decisions/). The ADR format is defined in each location's own `decisions/README.md`.
+ADRs are recorded where the decision actually applies: repository-specific decisions live in that repository's own `decisions/` folder (e.g. [`macro-data-observatory/decisions/`](https://github.com/macro-evidence/macro-data-observatory/tree/main/decisions)); decisions that genuinely apply across multiple repositories or to the organization's structure itself are recorded in this repository under [`decisions/`](decisions/). The exact ADR format is defined in each location's own `decisions/README.md`.
 
 ---
 
@@ -101,6 +95,10 @@ Governance documents are never silently modified.
 ---
 
 ## Changelog
+
+### 1.4.1 (2026-08-20)
+
+- Corrected §5's ADR-content description to match the repository-owned ADR templates: ADRs record context, decision, and consequences, while each applicable `decisions/README.md` owns the exact format. Removed the stale requirement for separate "Alternatives considered" and "Rationale" sections. PATCH — clarification only; the decision-record process and ADR placement rules are unchanged.
 
 ### 1.4.0 (2026-08-09)
 
