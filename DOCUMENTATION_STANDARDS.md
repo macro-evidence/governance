@@ -1,6 +1,6 @@
 # Macro Evidence — Documentation Standards
 
-> Version 1.3.0 · Active · Last updated 2026-08-09
+> Version 1.3.1 · Active · Last updated 2026-08-20
 
 ---
 
@@ -8,14 +8,14 @@
 
 Documentation is an engineering artifact, produced alongside the work it describes—not after it. A change without updated documentation is not considered complete.
 
-Documentation evolves with the systems it describes and must remain synchronized with implementation. Documentation records the current state of the project, not future intentions.
+Documentation evolves with the systems it describes and must remain synchronized with implementation. Current-state documentation records what is true now. Documents whose explicit purpose includes vision, roadmap, proposals, or other future direction may describe that direction, but it must be clearly identified as future-facing and must never be presented as already delivered.
 
 ---
 
 ## 2. Writing Principles
 
 - Precise over persuasive — avoid marketing language in engineering documentation.
-- Every document states what is true now, not what is aspirational.
+- Current-state claims state what is true now. Planned or aspirational capability is labeled explicitly and is never written as though it is already delivered.
 - Status is always explicit (`Draft`, `Active`, `Superseded`), never implied.
 - Paraphrase and consolidate rather than duplicate. If two documents would communicate the same information, one links to the other instead.
 - Every document has a clearly defined owner and purpose.
@@ -43,7 +43,7 @@ A topic should have exactly one canonical owner. Other documents reference that 
 
 - Use tables for structured information (status, comparisons, roadmaps, inventories).
 - Use prose for rationale, assumptions, and explanations.
-- Include a one-line blockquote tagline beneath the title of public-facing documents where appropriate.
+- Include a one-line blockquote tagline beneath the title of the organization's brand-facing documents (e.g., the `.github` profile README). Governance and policy documents use the version/status blockquote only, not a tagline.
 - Separate major sections with horizontal rules in long-form documents.
 - Use fenced code blocks for commands, configuration, and examples.
 - Use directory trees when documenting repository or project structure.
@@ -82,6 +82,11 @@ Guidelines:
 
 ## Changelog
 
+- **1.3.1** (2026-08-20)
+  - Clarified §§1–2 so current-state claims must describe what is true now while explicitly future-facing document sections (such as vision or roadmap) may state future direction when clearly labeled; this reconciles the writing rule with the existing documentation ownership of organization vision and roadmap.
+  - Tightened the tagline formatting rule (§4) to match actual practice: taglines are reserved for brand-facing documents, while governance and policy documents use their version/status blockquote without a tagline.
+  - PATCH — both changes clarify existing document types and practice; documentation ownership and the prohibition on presenting planned capability as already delivered are unchanged.
+
 - **1.3.0** (2026-08-09)
   - Split ADR ownership: repository-specific ADRs are owned by that repository's own `decisions/`; only cross-cutting ADRs are owned by this repository's `decisions/`. See `GOVERNANCE.md` 1.4.0 and `macro-data-observatory` decision 0008.
 
@@ -98,3 +103,4 @@ Guidelines:
 
 - **1.0.0** (2026-07-23)
   - Initial version. Formalized documentation conventions established during the organization foundation phase.
+  
