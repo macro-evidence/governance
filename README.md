@@ -16,7 +16,7 @@
 
 ## Versioning
 
-Each document above is versioned independently (`MAJOR.MINOR.PATCH`) with its own changelog. There is no single version number for this repository as a whole — see [`GOVERNANCE.md`](GOVERNANCE.md) §6 for what constitutes each level of change.
+Each document above is versioned independently (`MAJOR.MINOR.PATCH`) with its own changelog. There is no single version number for this repository as a whole — see [`GOVERNANCE.md`](GOVERNANCE.md) §7 for what constitutes each level of change.
 
 ## Scope
 
