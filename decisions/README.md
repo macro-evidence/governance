@@ -1,8 +1,14 @@
 # Architecture Decision Records
 
-This folder is reserved for decisions that genuinely apply across multiple Macro Evidence repositories or to the organization's structure itself, per [`GOVERNANCE.md`](../GOVERNANCE.md) §5.
+This folder contains decisions that genuinely apply across multiple Macro Evidence repositories or to the organization's structure itself, per [`GOVERNANCE.md`](../GOVERNANCE.md) §5.
 
-Decisions specific to a single repository's code, schema, or implementation are recorded in that repository's own `decisions/` folder instead — e.g. [`macro-data-observatory/decisions/`](https://github.com/macro-evidence/macro-data-observatory/tree/main/decisions). All 7 decisions recorded here through 2026-08-08 turned out to be MDO-specific on review and were moved there; none currently qualify as cross-cutting, so this folder is empty until one does. See [`macro-data-observatory` decision 0008](https://github.com/macro-evidence/macro-data-observatory/blob/main/decisions/0008-adr-placement-per-repository.md) for that migration's own reasoning.
+Repository-specific decisions are recorded in that repository's own `decisions/` folder — e.g. [`macro-data-observatory/decisions/`](https://github.com/macro-evidence/macro-data-observatory/tree/main/decisions). The 7 decisions formerly recorded here were moved to MDO on 2026-08-09 after review showed that all were MDO-specific. See [`macro-data-observatory` decision 0008](https://github.com/macro-evidence/macro-data-observatory/blob/main/decisions/0008-adr-placement-per-repository.md) for the migration decision and rationale.
+
+## Numbering and references
+
+Decision numbering is repository-local. Following that migration, the governance sequence starts at `0001`; each repository maintains its own independent sequence.
+
+Within the repository that owns a decision, refer to it as `decision NNNN`. When referring to a decision from another repository, qualify it with the repository name — for example, `governance decision 0001` or `macro-data-observatory decision 0008`.
 
 ## Format
 
@@ -26,4 +32,4 @@ Expected benefits, trade-offs, risks, and follow-up implications.
 
 ## Decisions
 
-No cross-cutting decisions recorded yet.
+- [0001. Evidence-paced roadmap and shared-foundation product growth](0001-evidence-paced-roadmap-and-shared-foundation-growth.md)
