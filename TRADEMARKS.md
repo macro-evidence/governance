@@ -1,6 +1,6 @@
 # Macro Evidence — Trademarks Policy
 
-> Version 1.1.0 · Active · Last updated 2026-08-09
+> Version 1.1.1 · Active · Last updated 2026-08-21
 
 > This policy establishes Macro Evidence's position regarding the Macro Evidence name and identity. It does not restrict your rights to use, modify, fork, or redistribute our code and content under the licenses below.
 
@@ -28,14 +28,14 @@ Macro Evidence repositories are released under open licenses:
 |---|---|---|
 | `macro-evidence/website` | Apache License 2.0 | Software / open-source license |
 | `macro-evidence/macro-data-observatory` | GNU Affero General Public License v3.0-only (AGPL-3.0-only) | Software / open-source copyleft license |
-| `macro-evidence/governance` | Creative Commons Attribution 4.0 International (CC BY 4.0) | Open-content / documentation license |
+| `macro-evidence/governance` | Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) | Open-content / documentation license |
 | `macro-evidence/.github` | Creative Commons Attribution 4.0 International (CC BY 4.0) | Open-content / documentation license |
 
 These licenses govern the code or content of their respective repositories, on the terms stated in each repository's `LICENSE` file. Each grants real rights, but the specific rights and obligations are not identical across them — a software license, a software copyleft license, and a content license each work differently, and the applicable `LICENSE` file is the authoritative statement of what it permits.
 
 **They do not grant permission to use Macro Evidence's name, logos, or visual identity.** A license governs what you may do with code or content. This policy governs what you may do with the identity attached to it. You can be in full compliance with a repository's license while still being out of step with this policy, and this policy does not remove or override any right a repository license expressly grants.
 
-For example: forking `macro-data-observatory` under AGPL-3.0-only or reusing `governance` content under CC BY 4.0 both come with real rights under those licenses — including CC BY 4.0's attribution requirement, which is a factual credit, not a license to adopt Macro Evidence's name as your own project's identity.
+For example: forking `macro-data-observatory` under AGPL-3.0-only or reusing `governance` content under CC BY-SA 4.0 both come with real rights under those licenses — including attribution requirements, which provide factual credit rather than permission to adopt Macro Evidence's name as another project's identity.
 
 ---
 
@@ -168,6 +168,9 @@ This document is Macro Evidence's trademark policy, not a substitute for legal a
 ---
 
 ## Changelog
+
+- **1.1.1** (2026-08-21)
+  - Updated the `macro-evidence/governance` license references from CC BY 4.0 to CC BY-SA 4.0 following decision 0002. No trademark permissions or restrictions changed.
 
 - **1.1.0** (2026-08-09)
   - Added `macro-evidence/.github` to the repository license table (CC BY 4.0), now that it carries its own LICENSE.

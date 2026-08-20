@@ -28,6 +28,6 @@ Not duplicated here. This repository inherits the organization-wide defaults fro
 
 ## License
 
-Licensed under [Creative Commons Attribution 4.0 International](LICENSE) (CC BY 4.0).
+Licensed under [Creative Commons Attribution-ShareAlike 4.0 International](LICENSE) (CC BY-SA 4.0).
 
 This license governs the content in this repository. It does not itself grant rights to Macro Evidence's name, logos, or visual identity — see [`TRADEMARKS.md`](TRADEMARKS.md) for that separate policy.
