@@ -1,6 +1,6 @@
 # Macro Evidence — Documentation Standards
 
-> Version 1.3.1 · Active · Last updated 2026-08-20
+> Version 1.3.2 · Active · Last updated 2026-08-20
 
 ---
 
@@ -43,7 +43,7 @@ A topic should have exactly one canonical owner. Other documents reference that 
 
 - Use tables for structured information (status, comparisons, roadmaps, inventories).
 - Use prose for rationale, assumptions, and explanations.
-- Include a one-line blockquote tagline beneath the title of the organization's brand-facing documents (e.g., the `.github` profile README). Governance and policy documents use the version/status blockquote only, not a tagline.
+- Use a one-line blockquote tagline beneath the title of standalone brand-facing documents. When a document is rendered within a platform surface that already supplies equivalent organization identity or descriptive text, do not repeat that material in the document. Governance and policy documents use the version/status blockquote only, not a tagline.
 - Separate major sections with horizontal rules in long-form documents.
 - Use fenced code blocks for commands, configuration, and examples.
 - Use directory trees when documenting repository or project structure.
@@ -81,6 +81,10 @@ Guidelines:
 ---
 
 ## Changelog
+
+- **1.3.2** (2026-08-20)
+  - Clarified §4 so the tagline convention applies to standalone brand-facing documents, while documents rendered within platform surfaces do not repeat equivalent organization identity or descriptive text already supplied by the surrounding interface.
+  - PATCH — reconciles the formatting convention with §2's no-duplication principle; documentation ownership and trademark/identity policy are unchanged.
 
 - **1.3.1** (2026-08-20)
   - Clarified §§1–2 so current-state claims must describe what is true now while explicitly future-facing document sections (such as vision or roadmap) may state future direction when clearly labeled; this reconciles the writing rule with the existing documentation ownership of organization vision and roadmap.
