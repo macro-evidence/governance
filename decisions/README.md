@@ -12,7 +12,7 @@ Within the repository that owns a decision, refer to it as `decision NNNN`. When
 
 ## Format
 
-One file per decision: `NNNN-short-title.md`, numbered sequentially, using:
+One ADR per file: `NNNN-short-title.md`, numbered sequentially, using:
 
 ```
 # NNNN. Short title
@@ -29,6 +29,8 @@ What was decided.
 ## Consequences
 Expected benefits, trade-offs, risks, and follow-up implications.
 ```
+
+**Decision count per ADR:** Most ADRs record one coherent decision boundary under the singular `## Decision` heading. An ADR may use a plural `## Decisions` heading when multiple decisions are inseparable — for example, when an explicit exclusion or deferral is necessary to define what the primary decision does and does not include. Decisions that can be accepted, revisited, or superseded independently receive separate ADR numbers.
 
 ## Decisions
 
