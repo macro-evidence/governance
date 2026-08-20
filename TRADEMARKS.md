@@ -1,8 +1,6 @@
 # Macro Evidence — Trademarks Policy
 
-> Version 1.1.1 · Active · Last updated 2026-08-21
-
-> This policy establishes Macro Evidence's position regarding the Macro Evidence name and identity. It does not restrict your rights to use, modify, fork, or redistribute our code and content under the licenses below.
+> Version 1.1.2 · Active · Last updated 2026-08-21
 
 ---
 
@@ -168,6 +166,9 @@ This document is Macro Evidence's trademark policy, not a substitute for legal a
 ---
 
 ## Changelog
+
+- **1.1.2** (2026-08-21)
+  - Removed the redundant introductory blockquote so the policy follows the governance-document header convention in `DOCUMENTATION_STANDARDS.md` §4. No trademark permissions or restrictions changed.
 
 - **1.1.1** (2026-08-21)
   - Updated the `macro-evidence/governance` license references from CC BY 4.0 to CC BY-SA 4.0 following decision 0002. No trademark permissions or restrictions changed.
