@@ -1,6 +1,6 @@
 # Macro Evidence — Trademarks Policy
 
-> Version 1.1.2 · Active · Last updated 2026-08-21
+> Version 1.1.3 · Active · Last updated 2026-08-21
 
 ---
 
@@ -27,7 +27,7 @@ Macro Evidence repositories are released under open licenses:
 | `macro-evidence/website` | Apache License 2.0 | Software / open-source license |
 | `macro-evidence/macro-data-observatory` | GNU Affero General Public License v3.0-only (AGPL-3.0-only) | Software / open-source copyleft license |
 | `macro-evidence/governance` | Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) | Open-content / documentation license |
-| `macro-evidence/.github` | Creative Commons Attribution 4.0 International (CC BY 4.0) | Open-content / documentation license |
+| `macro-evidence/.github` | Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) | Open-content / documentation license |
 
 These licenses govern the code or content of their respective repositories, on the terms stated in each repository's `LICENSE` file. Each grants real rights, but the specific rights and obligations are not identical across them — a software license, a software copyleft license, and a content license each work differently, and the applicable `LICENSE` file is the authoritative statement of what it permits.
 
@@ -166,6 +166,9 @@ This document is Macro Evidence's trademark policy, not a substitute for legal a
 ---
 
 ## Changelog
+
+- **1.1.3** (2026-08-21)
+  - Updated the `macro-evidence/.github` license reference from CC BY 4.0 to CC BY-SA 4.0 following decision 0003. No trademark permissions or restrictions changed.
 
 - **1.1.2** (2026-08-21)
   - Removed the redundant introductory blockquote so the policy follows the governance-document header convention in `DOCUMENTATION_STANDARDS.md` §4. No trademark permissions or restrictions changed.
