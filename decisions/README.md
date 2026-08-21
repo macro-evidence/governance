@@ -36,3 +36,4 @@ Expected benefits, trade-offs, risks, and follow-up implications.
 
 - [0001. Evidence-paced roadmap and shared-foundation product growth](0001-evidence-paced-roadmap-and-shared-foundation-growth.md)
 - [0002. License governance content under CC BY-SA 4.0](0002-license-governance-content-under-cc-by-sa-4.0.md)
+- [0003. License .github community infrastructure under CC BY-SA 4.0](0003-license-github-community-infrastructure-under-cc-by-sa-4.0.md)
