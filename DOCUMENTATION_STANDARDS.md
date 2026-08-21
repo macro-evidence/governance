@@ -1,6 +1,6 @@
 # Macro Evidence — Documentation Standards
 
-> Version 1.3.2 · Active · Last updated 2026-08-20
+> Version 1.4.0 · Active · Last updated 2026-08-21
 
 ---
 
@@ -72,6 +72,16 @@ Supported prefixes include:
 - `test:`
 - `chore:`
 
+A commit may include an optional scope in parentheses after the type when the scope materially clarifies the affected area, using the form `type(scope): description`.
+
+Scope guidelines:
+
+- Scopes are optional. Use one when it adds useful context; do not add one merely for consistency with other commits.
+- A scope should be a concise noun identifying a coherent affected area, such as a subsystem, document family, configuration area, or other stable concern. Examples from current practice include `docs(decisions):`, `fix(issues):`, and `feat(etl):`.
+- Prefer an existing scope when it accurately describes the same concern.
+- Do not force a change into an inaccurate existing scope. A new scope may be introduced when a distinct, reusable boundary becomes useful.
+- Use an unscoped commit when the change is repository-wide, when no meaningful scope applies, or when the type and description already communicate the change clearly.
+
 Guidelines:
 
 - One logical change per commit.
@@ -81,6 +91,10 @@ Guidelines:
 ---
 
 ## Changelog
+
+- **1.4.0** (2026-08-21)
+  - Expanded §6 with explicit guidance for optional Conventional Commit scopes, including when to reuse an existing scope, when to introduce a new scope, and when to leave a commit unscoped.
+  - MINOR — formalizes established scope usage already present across Macro Evidence repository history; the supported commit types and one-logical-change rule are unchanged.
 
 - **1.3.2** (2026-08-20)
   - Clarified §4 so the tagline convention applies to standalone brand-facing documents, while documents rendered within platform surfaces do not repeat equivalent organization identity or descriptive text already supplied by the surrounding interface.
