@@ -39,3 +39,4 @@ Expected benefits, trade-offs, risks, and follow-up implications.
 - [0003. License .github community infrastructure under CC BY-SA 4.0](0003-license-github-community-infrastructure-under-cc-by-sa-4.0.md)
 - [0004. Adopt tailored Contributor Covenant 3.0](0004-adopt-tailored-contributor-covenant-3.0.md)
 - [0005. Establish organization-wide contribution governance](0005-establish-organization-wide-contribution-governance.md)
+- [0006. Preserve licensing flexibility through contributor agreements](0006-preserve-licensing-flexibility-through-contributor-agreements.md)
