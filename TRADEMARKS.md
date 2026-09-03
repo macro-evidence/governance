@@ -1,6 +1,6 @@
 # Macro Evidence — Trademarks Policy
 
-> Version 1.2.0 · Active · Last updated 2026-09-03
+> Version 1.2.1 · Active · Last updated 2026-09-03
 
 ---
 
@@ -112,7 +112,7 @@ This describes the kind of use that's restricted — creating confusion about so
 
 ## 7. Visual Identity & Brand Artwork
 
-Macro Evidence's current visual identity — including its standalone mark, wordmark lockups, and app icon, as officially used on its GitHub organization, website, and other official channels — is part of its identity and is addressed by this policy where applicable, on the same basis as the word marks in §3: usable for factual reference per §4, not usable as the basis for another project's identity per §5–6.
+Macro Evidence's current visual identity — including its standalone mark, wordmark lockups, and app icon, as officially used across its GitHub organization and other official channels — is part of its identity and is addressed by this policy where applicable, on the same basis as the word marks in §3: usable for factual reference per §4, not usable as the basis for another project's identity per §§5–6.
 
 This section does not classify every visual element that has ever appeared alongside Macro Evidence material as a trademark, copyright work, or exclusively owned asset. In particular:
 
@@ -159,6 +159,10 @@ This document is Macro Evidence's trademark policy, not a substitute for legal a
 ---
 
 ## Changelog
+
+### 1.2.1 (2026-09-03)
+
+- Clarified §7's current visual-identity deployment wording by replacing the website-specific reference with the broader "other official channels"; no trademark permissions, restrictions, mark inventory, registration-status rule, or identity scope changed.
 
 ### 1.2.0 (2026-09-03)
 
