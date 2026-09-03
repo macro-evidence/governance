@@ -12,6 +12,7 @@
 | [GOVERNANCE.md](GOVERNANCE.md) | Governance principles, decision-making, repository hierarchy, ADRs, versioning |
 | [DOCUMENTATION_STANDARDS.md](DOCUMENTATION_STANDARDS.md) | Documentation principles, repository documentation, writing standards, naming conventions, Conventional Commits |
 | [TRADEMARKS.md](TRADEMARKS.md) | Trademark, brand, and organizational identity policy |
+| [CONTRIBUTION_POLICY.md](CONTRIBUTION_POLICY.md) | Organization-wide contribution participation, acceptance, contributor-rights, and stewardship policy |
 | [decisions/](decisions/) | Cross-cutting Architecture Decision Records (ADRs) only — repository-specific ADRs live in that repository's own `decisions/` |
 
 ## Versioning
@@ -22,9 +23,11 @@ Each document above is versioned independently (`MAJOR.MINOR.PATCH`) with its ow
 
 This repository holds cross-cutting governance: decisions and conventions that apply across every Macro Evidence repository. Anything specific to one platform — setup instructions, architecture particular to that codebase — belongs in that repository instead, per [`DOCUMENTATION_STANDARDS.md`](DOCUMENTATION_STANDARDS.md) §3.
 
-## Code of Conduct, Contributing, Security
+## Community and participation
 
-Not duplicated here. This repository inherits the organization-wide defaults from [`macro-evidence/.github`](https://github.com/macro-evidence/.github).
+The organization-wide Contribution Policy is canonical here because it defines cross-repository participation, acceptance, and contributor-rights principles.
+
+GitHub-specific contribution mechanics, the Code of Conduct, and security reporting remain in [`macro-evidence/.github`](https://github.com/macro-evidence/.github) and are not duplicated here.
 
 ## License
 

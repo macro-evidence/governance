@@ -1,6 +1,6 @@
 # Macro Evidence — Governance & Decision-Making Charter
 
-> Version 1.4.1 · Active · Last updated 2026-08-20
+> Version 1.5.0 · Active · Last updated 2026-09-03
 
 ---
 
@@ -70,9 +70,11 @@ When guidance overlaps, higher-level documents take priority.
 | Organization mission, vision, scope | [`ORGANIZATION_CHARTER.md`](ORGANIZATION_CHARTER.md) |
 | Organization governance and decision-making | [`GOVERNANCE.md`](GOVERNANCE.md) |
 | Documentation standards and conventions | [`DOCUMENTATION_STANDARDS.md`](DOCUMENTATION_STANDARDS.md) |
-| Trademark, brand, and organizational identity | [`TRADEMARKS.md`](TRADEMARKS.md) |
+| Organization policies within their defined subject | [`CONTRIBUTION_POLICY.md`](CONTRIBUTION_POLICY.md); [`TRADEMARKS.md`](TRADEMARKS.md) |
 | Repository policies | Repository-specific governance documents |
 | Repository implementation details | Repository `README.md` and technical documentation |
+
+The hierarchy is scope-aware. Precedence applies when documents genuinely govern the same question; a higher-listed document does not become canonical for a subject outside its defined scope. Organization policies at the same level are canonical within their own subjects, and their listing order does not allow one to override another outside its scope. If two scope-specific policies genuinely conflict, the conflict must be reconciled deliberately under the higher-level organization and governance rules rather than resolved by silently choosing one.
 
 Repository documentation may extend organization standards but must never contradict them.
 
@@ -80,7 +82,7 @@ Repository documentation may extend organization standards but must never contra
 
 ## 7. Versioning Foundational Documents
 
-This charter `GOVERNANCE.md`, [`ORGANIZATION_CHARTER.md`](ORGANIZATION_CHARTER.md), [`DOCUMENTATION_STANDARDS.md`](DOCUMENTATION_STANDARDS.md), and [`TRADEMARKS.md`](TRADEMARKS.md) are versioned independently using Semantic Versioning (`MAJOR.MINOR.PATCH`).
+This charter `GOVERNANCE.md`, [`ORGANIZATION_CHARTER.md`](ORGANIZATION_CHARTER.md), [`DOCUMENTATION_STANDARDS.md`](DOCUMENTATION_STANDARDS.md), [`CONTRIBUTION_POLICY.md`](CONTRIBUTION_POLICY.md), and [`TRADEMARKS.md`](TRADEMARKS.md) are versioned independently using Semantic Versioning (`MAJOR.MINOR.PATCH`).
 
 | Version | Meaning |
 |----------|---------|
@@ -95,6 +97,14 @@ Governance documents are never silently modified.
 ---
 
 ## Changelog
+
+### 1.5.0 (2026-09-03)
+
+- Added `CONTRIBUTION_POLICY.md` to the governance hierarchy as the canonical organization-wide owner of contribution participation, acceptance, and contributor-rights policy.
+- Clarified that scope-specific organization policies at the same hierarchy level govern within their own subjects and do not silently override one another.
+- Added the Contribution Policy to the independently versioned governance-document set.
+- Normalized the 1.0.0 changelog summary to the canonical governance/policy-document structure defined in `DOCUMENTATION_STANDARDS.md` §4; no governance semantics changed.
+- MINOR — introduces a new cross-repository governance capability and makes the policy-precedence boundary explicit without changing the existing decision criteria, execution model, or ADR placement rules.
 
 ### 1.4.1 (2026-08-20)
 
@@ -129,4 +139,4 @@ Governance documents are never silently modified.
 
 ### 1.0.0 (2026-07-23)
 
-Initial version. Formalized the decision criteria and staged execution model established during the organization's foundation phase.
+- Initial version. Formalized the decision criteria and staged execution model established during the organization's foundation phase.

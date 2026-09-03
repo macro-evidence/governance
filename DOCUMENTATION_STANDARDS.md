@@ -1,6 +1,6 @@
 # Macro Evidence — Documentation Standards
 
-> Version 1.4.0 · Active · Last updated 2026-08-21
+> Version 1.5.0 · Active · Last updated 2026-09-03
 
 ---
 
@@ -32,6 +32,8 @@ Documentation evolves with the systems it describes and must remain synchronized
 | Architecture Decision Records (ADRs) — repository-specific | That repository's own `decisions/` (e.g. [`macro-data-observatory/decisions/`](https://github.com/macro-evidence/macro-data-observatory/tree/main/decisions)) |
 | Architecture Decision Records (ADRs) — cross-cutting | [`decisions/`](decisions/) in this repository |
 | Trademark, brand, and organizational identity policy | [`TRADEMARKS.md`](TRADEMARKS.md) |
+| Organization-wide contribution participation, acceptance, and contributor-rights policy | [`CONTRIBUTION_POLICY.md`](CONTRIBUTION_POLICY.md) |
+| Organization-wide GitHub community-health files (default contribution mechanics, Code of Conduct, Security Policy, and templates) | [`macro-evidence/.github`](https://github.com/macro-evidence/.github) |
 | Repository-specific setup, development, usage | That repository's own `README.md` |
 | Public organization overview | [`.github` profile README](https://github.com/macro-evidence/.github/blob/main/profile/README.md) |
 
@@ -48,6 +50,7 @@ A topic should have exactly one canonical owner. Other documents reference that 
 - Use fenced code blocks for commands, configuration, and examples.
 - Use directory trees when documenting repository or project structure.
 - Use absolute URLs where content must render correctly outside a normal repository context (organization profile README, issue templates). Use relative links elsewhere.
+- In independently versioned governance and policy documents, `## Changelog` contains one level-three heading per released version in the form `### MAJOR.MINOR.PATCH (YYYY-MM-DD)`, newest first. Place the release summary beneath that heading as a bulleted list.
 
 ---
 
@@ -92,33 +95,46 @@ Guidelines:
 
 ## Changelog
 
-- **1.4.0** (2026-08-21)
-  - Expanded §6 with explicit guidance for optional Conventional Commit scopes, including when to reuse an existing scope, when to introduce a new scope, and when to leave a commit unscoped.
-  - MINOR — formalizes established scope usage already present across Macro Evidence repository history; the supported commit types and one-logical-change rule are unchanged.
+### 1.5.0 (2026-09-03)
 
-- **1.3.2** (2026-08-20)
-  - Clarified §4 so the tagline convention applies to standalone brand-facing documents, while documents rendered within platform surfaces do not repeat equivalent organization identity or descriptive text already supplied by the surrounding interface.
-  - PATCH — reconciles the formatting convention with §2's no-duplication principle; documentation ownership and trademark/identity policy are unchanged.
+- Added canonical ownership for the organization-wide Contribution Policy.
+- Distinguished cross-repository contribution policy in `governance` from organization-wide GitHub community-health files in `.github`.
+- Standardized changelog structure for independently versioned governance and policy documents: each released version is represented as a level-three heading followed by a bulleted release summary.
+- MINOR — introduces documentation ownership for a new governance capability and standardizes changelog structure; other writing, formatting, naming, and commit conventions are unchanged.
 
-- **1.3.1** (2026-08-20)
-  - Clarified §§1–2 so current-state claims must describe what is true now while explicitly future-facing document sections (such as vision or roadmap) may state future direction when clearly labeled; this reconciles the writing rule with the existing documentation ownership of organization vision and roadmap.
-  - Tightened the tagline formatting rule (§4) to match actual practice: taglines are reserved for brand-facing documents, while governance and policy documents use their version/status blockquote without a tagline.
-  - PATCH — both changes clarify existing document types and practice; documentation ownership and the prohibition on presenting planned capability as already delivered are unchanged.
+### 1.4.0 (2026-08-21)
 
-- **1.3.0** (2026-08-09)
-  - Split ADR ownership: repository-specific ADRs are owned by that repository's own `decisions/`; only cross-cutting ADRs are owned by this repository's `decisions/`. See `GOVERNANCE.md` 1.4.0 and `macro-data-observatory` decision 0008.
+- Expanded §6 with explicit guidance for optional Conventional Commit scopes, including when to reuse an existing scope, when to introduce a new scope, and when to leave a commit unscoped.
+- MINOR — formalizes established scope usage already present across Macro Evidence repository history; the supported commit types and one-logical-change rule are unchanged.
 
-- **1.2.0** (2026-08-08)
-  - Added Documentation Ownership entry for `TRADEMARKS.md`.
+### 1.3.2 (2026-08-20)
 
-- **1.1.0** (2026-07-24)
-  - Renamed **Voice** to **Writing Principles**.
-  - Added documentation synchronization principle.
-  - Clarified documentation ownership and canonical sources.
-  - Expanded formatting conventions.
-  - Expanded commit conventions.
-  - Updated references following creation of the dedicated `governance` repository.
+- Clarified §4 so the tagline convention applies to standalone brand-facing documents, while documents rendered within platform surfaces do not repeat equivalent organization identity or descriptive text already supplied by the surrounding interface.
+- PATCH — reconciles the formatting convention with §2's no-duplication principle; documentation ownership and trademark/identity policy are unchanged.
 
-- **1.0.0** (2026-07-23)
-  - Initial version. Formalized documentation conventions established during the organization foundation phase.
-  
+### 1.3.1 (2026-08-20)
+
+- Clarified §§1–2 so current-state claims must describe what is true now while explicitly future-facing document sections (such as vision or roadmap) may state future direction when clearly labeled; this reconciles the writing rule with the existing documentation ownership of organization vision and roadmap.
+- Tightened the tagline formatting rule (§4) to match actual practice: taglines are reserved for brand-facing documents, while governance and policy documents use their version/status blockquote without a tagline.
+- PATCH — both changes clarify existing document types and practice; documentation ownership and the prohibition on presenting planned capability as already delivered are unchanged.
+
+### 1.3.0 (2026-08-09)
+
+- Split ADR ownership: repository-specific ADRs are owned by that repository's own `decisions/`; only cross-cutting ADRs are owned by this repository's `decisions/`. See `GOVERNANCE.md` 1.4.0 and `macro-data-observatory` decision 0008.
+
+### 1.2.0 (2026-08-08)
+
+- Added Documentation Ownership entry for `TRADEMARKS.md`.
+
+### 1.1.0 (2026-07-24)
+
+- Renamed **Voice** to **Writing Principles**.
+- Added documentation synchronization principle.
+- Clarified documentation ownership and canonical sources.
+- Expanded formatting conventions.
+- Expanded commit conventions.
+- Updated references following creation of the dedicated `governance` repository.
+
+### 1.0.0 (2026-07-23)
+
+- Initial version. Formalized documentation conventions established during the organization foundation phase.

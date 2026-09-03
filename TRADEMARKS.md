@@ -1,12 +1,12 @@
 # Macro Evidence — Trademarks Policy
 
-> Version 1.1.3 · Active · Last updated 2026-08-21
+> Version 1.2.0 · Active · Last updated 2026-09-03
 
 ---
 
 ## 1. Purpose & Guiding Principle
 
-Macro Evidence's long-term intent is public-good, open-source stewardship. The organization does not intend to monetize its core infrastructure through proprietary licensing, advertising, or restricting legitimate use of its open-source work. This does not affect Macro Evidence's ability to receive donations, sponsorships, grants, or other legitimate organizational funding or to sustain its operations; nor does it affect commercial use that the applicable repository licenses permit. Such funding mechanisms are not intended to change the open licensing of the work or the identity principles in this policy. Protecting the Macro Evidence identity is not about creating scarcity around the work — it is about preserving organizational continuity, attribution, and public trust as the project grows.
+Macro Evidence's long-term intent is public-good, open-source stewardship. The organization intends to keep its public core available under the approved open-source and open-content licenses that govern it. This trademark policy does not determine Macro Evidence's funding model or whether work is offered under additional license terms. Where Macro Evidence holds the required rights and separately decides to grant additional license terms, doing so does not by itself revoke rights validly granted under existing public licenses, restrict legitimate use permitted by those licenses, or change the identity principles in this policy. Protecting the Macro Evidence identity is not about creating scarcity around the work — it is about preserving organizational continuity, attribution, and public trust as the project grows.
 
 The guiding principle is: **open the work, preserve the identity.**
 
@@ -20,20 +20,13 @@ The core distinction it exists to maintain: **an open-source or open-content lic
 
 ## 2. Relationship to Repository Licenses
 
-Macro Evidence repositories are released under open licenses:
+Licensing is repository-specific. The **current committed `LICENSE` file in each repository establishes that repository's default public licensing terms**, subject to any material explicitly identified under separate third-party or file-specific terms. Where a repository has no committed license, this policy does not create or imply open-source or open-content permission for that repository.
 
-| Repository | License | Type |
-|---|---|---|
-| `macro-evidence/website` | Apache License 2.0 | Software / open-source license |
-| `macro-evidence/macro-data-observatory` | GNU Affero General Public License v3.0-only (AGPL-3.0-only) | Software / open-source copyleft license |
-| `macro-evidence/governance` | Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) | Open-content / documentation license |
-| `macro-evidence/.github` | Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) | Open-content / documentation license |
+Repository licenses grant real rights according to their own terms. A software license, software copyleft license, and open-content license can impose different permissions and obligations. Additional licensing, where Macro Evidence holds the rights required to offer it, is a separate licensing decision outside this trademark policy; it does not by itself revoke rights validly granted under an existing public license.
 
-These licenses govern the code or content of their respective repositories, on the terms stated in each repository's `LICENSE` file. Each grants real rights, but the specific rights and obligations are not identical across them — a software license, a software copyleft license, and a content license each work differently, and the applicable `LICENSE` file is the authoritative statement of what it permits.
+**Repository licensing and trademark rights are separate.** Except to the extent an applicable repository license expressly provides otherwise, a repository license does not grant general permission to use Macro Evidence's name, logos, or visual identity. This policy governs use of the identity attached to the work, subject to applicable law, and it does not remove or override any right a repository license expressly grants.
 
-**They do not grant permission to use Macro Evidence's name, logos, or visual identity.** A license governs what you may do with code or content. This policy governs what you may do with the identity attached to it. You can be in full compliance with a repository's license while still being out of step with this policy, and this policy does not remove or override any right a repository license expressly grants.
-
-For example: forking `macro-data-observatory` under AGPL-3.0-only or reusing `governance` content under CC BY-SA 4.0 both come with real rights under those licenses — including attribution requirements, which provide factual credit rather than permission to adopt Macro Evidence's name as another project's identity.
+For example, forking Macro Data Observatory or reusing Macro Evidence governance content according to the applicable repository license can come with real rights and obligations, including attribution or source-availability requirements where the license imposes them. The applicable repository license provides legal permission for the underlying work subject to its terms; attribution requirements provide factual credit where required, and source-availability requirements impose their own obligations. Those license permissions and obligations do not, by themselves, grant permission to adopt Macro Evidence's name as another project's identity.
 
 ---
 
@@ -96,7 +89,7 @@ A fork **should**:
 - Comply with the applicable repository license, including any source-code or corresponding-source requirements it imposes.
 - Feel free to accurately state its origin per §4.
 
-This applies regardless of whether the fork is a personal project, a research tool, or a commercial service — legitimate commercial, academic, research, and personal use of the code remains possible under the applicable license. Nothing here restricts the underlying open-source freedoms; it addresses identity only.
+This applies regardless of whether the fork is a personal project, a research tool, or a commercial service — legitimate commercial, academic, research, and personal use remains possible to the extent the applicable repository license permits it. Nothing here restricts the underlying licensed freedoms; it addresses identity only.
 
 Modifying, extending, or substantially changing the code does not itself grant permission to use Macro Evidence's name or identity. The scope of permitted identity use is set by this policy, not by how much the underlying code has changed.
 
@@ -137,15 +130,15 @@ Macro Evidence currently uses the ™ designation and does not represent these m
 
 ---
 
-## 9. Why This Policy Is Separate From Our Open-Source Licenses
+## 9. Why This Policy Is Separate From Repository Licenses
 
-It would be simpler to fold trademark terms into a repository's `LICENSE` file, but that conflates two different kinds of rights:
+Repository licenses and trademark rights address different legal interests. Some open-source and open-content licenses expressly address trademark rights or make clear that no trademark permission is granted, but the treatment differs by license. Macro Evidence therefore keeps its organization-wide identity rules in this separate policy rather than duplicating or modifying repository license texts.
 
-- Open licenses are designed to be reused, forked, and combined freely — adding trademark restrictions inside one would encumber the license itself and create ambiguity about what's actually open.
-- Trademark and identity concerns don't map cleanly onto a code or content license's structure — mixing them makes both harder to reason about.
-- Keeping this policy separate means the licenses in §2 stay exactly what they say they are — open-source and open-content licenses — while Macro Evidence's name and identity are addressed through an ordinary, separate mechanism that doesn't touch anyone's rights under those licenses.
+- Repository licenses govern the permissions and obligations attached to code or content under their own terms.
+- Trademark rights may be reserved, limited, or addressed separately; where an applicable repository license expressly addresses them, that license and applicable law continue to control.
+- Keeping this policy separate provides one consistent identity framework across Macro Evidence repositories with different licenses while leaving each repository's licensing terms unchanged.
 
-This is the same separation used by many established open-source projects and foundations: the code or content is open under its license; the name and visual identity are addressed by a short, separate policy.
+This separation is used by established open-source organizations and is a governance choice for clarity and consistency. It does not imply that trademark matters can never be addressed in an open-source or open-content license, and it does not alter any right or limitation in an applicable repository license.
 
 ---
 
@@ -167,17 +160,32 @@ This document is Macro Evidence's trademark policy, not a substitute for legal a
 
 ## Changelog
 
-- **1.1.3** (2026-08-21)
-  - Updated the `macro-evidence/.github` license reference from CC BY 4.0 to CC BY-SA 4.0 following decision 0003. No trademark permissions or restrictions changed.
+### 1.2.0 (2026-09-03)
 
-- **1.1.2** (2026-08-21)
-  - Removed the redundant introductory blockquote so the policy follows the governance-document header convention in `DOCUMENTATION_STANDARDS.md` §4. No trademark permissions or restrictions changed.
+- Reframed the public-good stewardship statement so Macro Evidence preserves its public open-source/open-content core without making this trademark policy the owner of funding or additional-licensing strategy.
+- Removed the duplicated repository-license inventory from this trademark policy. Each repository's committed `LICENSE` now establishes the repository's default public licensing terms, subject to explicitly separate third-party or file-specific terms, and no license is implied where a repository has none.
+- Clarified that additional licensing is a separate decision outside this trademark policy and, where Macro Evidence holds the required rights, does not by itself revoke rights validly granted under an existing public license.
+- Clarified the repository-license/trademark boundary without changing existing permitted or restricted identity uses.
+- Clarified §9's repository-license/trademark separation without implying that open-source or open-content licenses cannot themselves address trademark rights.
+- No trademark permission, restriction, official-status rule, mark inventory, or registration-status rule changed.
+- Reformatted changelog version entries to the canonical governance/policy-document structure defined in `DOCUMENTATION_STANDARDS.md` §4; no trademark-policy semantics changed.
 
-- **1.1.1** (2026-08-21)
-  - Updated the `macro-evidence/governance` license references from CC BY 4.0 to CC BY-SA 4.0 following decision 0002. No trademark permissions or restrictions changed.
+### 1.1.3 (2026-08-21)
 
-- **1.1.0** (2026-08-09)
-  - Added `macro-evidence/.github` to the repository license table (CC BY 4.0), now that it carries its own LICENSE.
+- Updated the `macro-evidence/.github` license reference from CC BY 4.0 to CC BY-SA 4.0 following decision 0003. No trademark permissions or restrictions changed.
 
-- **1.0.0** (2026-08-08)
-  - Initial version. Establishes the trademark policy separately from the organization's open-source and open-content licenses, covering currently claimed word marks (Macro Evidence™, Macro Data Observatory™, MDO™) and current visual identity, with original brand artwork distinguished from third-party components used during design.
+### 1.1.2 (2026-08-21)
+
+- Removed the redundant introductory blockquote so the policy follows the governance-document header convention in `DOCUMENTATION_STANDARDS.md` §4. No trademark permissions or restrictions changed.
+
+### 1.1.1 (2026-08-21)
+
+- Updated the `macro-evidence/governance` license references from CC BY 4.0 to CC BY-SA 4.0 following decision 0002. No trademark permissions or restrictions changed.
+
+### 1.1.0 (2026-08-09)
+
+- Added `macro-evidence/.github` to the repository license table (CC BY 4.0), now that it carries its own LICENSE.
+
+### 1.0.0 (2026-08-08)
+
+- Initial version. Establishes the trademark policy separately from the organization's open-source and open-content licenses, covering currently claimed word marks (Macro Evidence™, Macro Data Observatory™, MDO™) and current visual identity, with original brand artwork distinguished from third-party components used during design.
