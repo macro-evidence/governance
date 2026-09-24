@@ -1,6 +1,6 @@
 # Macro Evidence — Contribution Policy
 
-> Version 1.0.0 · Active · Last updated 2026-09-03
+> Version 1.1.0 · Active · Last updated 2026-09-24
 
 ---
 
@@ -56,26 +56,33 @@ Contributors must have the right to submit the work they offer. Do not submit ma
 
 Each repository's committed `LICENSE` establishes that repository's default public licensing terms, subject to any material that is explicitly identified under separate third-party or file-specific terms. If a repository has no committed license, do not infer licensing terms from another Macro Evidence repository; an external copyrightable contribution is not merged until the applicable repository licensing terms are established. Rights in Macro Evidence's names, marks, and visual identity are addressed separately by the Trademarks Policy, any express license terms, and applicable law; do not infer official status or general trademark permission from a repository license.
 
-Macro Evidence requires an approved contributor agreement before an external copyrightable contribution can be merged. A later legally reviewed process may publish a narrow exception for changes that do not require contributor-rights coverage. Where an agreement applies:
+Macro Evidence requires an approved contributor-rights basis before an external copyrightable contribution is merged. When the need for contributor-rights coverage is uncertain, the contribution is treated as requiring coverage until the question is resolved. Automated clearance is a merge control, not proof that a contributor's identity, ownership, employer authority, or provenance statement is true.
+
+The approved contributor-agreement architecture uses an Individual Contributor License Agreement (ICLA) for each natural person whose covered contribution may be merged. If an employer, company, institution, or other legal entity owns or may control relevant rights, an Entity Contributor License Agreement (ECLA) is additionally required unless Macro Evidence has documented another sufficient rights path for the specific situation.
+
+Where an agreement applies:
 
 - the contributor retains ownership of their original contribution unless a separate written agreement expressly says otherwise;
-- the agreement may grant Macro Evidence rights to use, modify, distribute, sublicense, and relicense the contribution;
-- those rights may include making the covered contribution available under additional license terms, including commercial or proprietary terms; and
-- any version of a contribution released as part of a public Macro Evidence project remains subject to the public open-source or open-content license terms applicable to that release; granting an additional license does not revoke those previously granted public rights.
+- Macro Evidence receives the copyright and patent rights stated in the applicable agreement, including rights needed to use, modify, distribute, sublicense, and relicense accepted contributions;
+- the approved outbound-license provision permits additional open, commercial, or proprietary licensing while preserving the submission-date public licensing required by the agreement;
+- signing an agreement does not guarantee acceptance and does not create employment, agency, partnership, sponsorship, governance authority, compensation, or authority to bind Macro Evidence; and
+- executed agreements and personal administrative information are private records and are not published merely because a person contributes.
 
-The applicable contributor agreement, when published, controls the legal terms of that grant. It cannot grant Macro Evidence rights in third-party material that the contributor does not control. Macro Evidence will not treat a pull request description, issue comment, or this policy as a substitute for an agreement where one is required.
+The applicable contributor agreement controls the legal terms of the grant. It cannot grant Macro Evidence rights in third-party material that the contributor or entity does not control. A pull request checkbox, issue comment, DCO sign-off, or this policy is not a substitute for an executed agreement where one is required.
 
-Until the required contributor-agreement mechanism is available, an external copyrightable contribution may be discussed or reviewed but will not be merged.
+The canonical public process is maintained in [`legal/cla/CONTRIBUTOR_AGREEMENT_PROCESS.md`](legal/cla/CONTRIBUTOR_AGREEMENT_PROCESS.md). The public ICLA/ECLA reference forms, privacy notice, third-party-material process, and provenance notice are maintained in the same directory. GitHub merge enforcement may be automated, but the **Contributor rights coverage** status exposes only the non-sensitive result needed for merge control. There is no blanket contributor-rights bypass merely because an account is an organization member, collaborator, or previously accepted contributor.
 
 ---
 
 ## 5. Employer, entity, and third-party material
 
-If your employer or another organization owns or may control rights in your proposed contribution, make sure you have the authority required to contribute it.
+If your employer or another organization owns or may control rights in your proposed contribution, make sure the applicable individual and entity contributor-rights coverage is in place before merge.
 
-Third-party code, documentation, data, media, or other material must be identified and must be compatible with the affected repository's licensing and provenance requirements. Do not present third-party work as your own.
+Third-party code, documentation, data, media, generated material, or other non-owned material must be identified and handled under the [Third-Party Material Process](legal/cla/THIRD_PARTY_MATERIAL_PROCESS.md) and must be compatible with the affected repository's licensing and provenance requirements. Do not present third-party work as your own. Provide complete source and restriction information known to you when non-owned material is proposed for inclusion.
 
-Macro Evidence may request additional rights or provenance information before accepting substantial, employer-owned, patent-sensitive, generated, or otherwise unusual contributions.
+Contributors and entity signatories must notify Macro Evidence if they later become aware that a material rights or provenance representation was inaccurate, or if entity authorization relevant to future contributions changes.
+
+Macro Evidence may request additional identity, authority, rights, provenance, or source evidence before accepting substantial, employer-owned, patent-sensitive, generated, binary, copied/ported, security-sensitive, unusually licensed, or otherwise high-risk contributions. A contributor's self-certification, Git author metadata, automated status result, or prior successful contribution is not conclusive where contrary evidence or material uncertainty exists.
 
 ---
 
@@ -95,9 +102,9 @@ Security vulnerabilities must not be reported through a public contribution. Fol
 
 Macro Evidence's public-good posture depends on keeping its public core openly available while maintaining enough organizational control to steward that work over the long term.
 
-Preserving the ability to offer work under additional license terms does not by itself revoke open-source or open-content rights validly granted to the public, and it does not guarantee that Macro Evidence will create a commercial licensing program.
+Additional licensing terms, where applicable, do not by themselves revoke open-source or open-content rights validly granted to the public.
 
-If a future additional-licensing program becomes materially consequential to the contributor community, Macro Evidence intends to consult significant active contributors where practical before launch. Consultation informs the stewardship decision but does not change legal rights already granted or create automatic governance authority.
+Material changes to licensing practice will be addressed through the applicable governance and policy process. Consultation, where appropriate, informs the decision but does not change legal rights already granted or create automatic governance authority.
 
 ---
 
@@ -105,11 +112,18 @@ If a future additional-licensing program becomes materially consequential to the
 
 For general contribution or collaboration questions, contact [hello@macro-evidence.com](mailto:hello@macro-evidence.com).
 
-A dedicated legal/licensing contact may be published when contributor-agreement or licensing administration becomes operational.
+For contributor-agreement execution, entity authority, licensing administration, or legal-record questions, contact [legal@macro-evidence.com](mailto:legal@macro-evidence.com).
 
 ---
 
 ## Changelog
+
+### 1.1.0 (2026-09-24)
+
+- Operationalizes the contributor-rights boundary through the approved agreement architecture and public process references.
+- Clarifies that automated clearance is a merge control, not proof of identity, ownership, authority, or provenance.
+- Keeps contribution participation separate from sponsorship, governance authority, and other organizational entitlements.
+- MINOR — adds operational contributor-rights and merge-enforcement requirements without changing the policy's existing open-participation and merit-based acceptance principles.
 
 ### 1.0.0 (2026-09-03)
 
