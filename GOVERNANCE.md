@@ -1,30 +1,32 @@
 # Macro Evidence — Governance & Decision-Making Charter
 
-> Version 1.5.0 · Active · Last updated 2026-09-03
+> Version 2.0.0 · Active · Last updated 2026-09-24
 
 ---
 
 ## 1. Purpose
 
-This charter defines how decisions are made across Macro Evidence and its platforms.
+This charter defines how Macro Evidence evaluates, records, reviews, and changes material organizational and technical decisions.
 
-At the current single-maintainer stage, its purpose is less about coordinating multiple people and more about keeping one person's decisions consistent, auditable, and reversible. This discipline establishes stable governance today while providing a foundation that future collaborators can adopt without renegotiating first principles.
+The objective is durable decision quality: choices should be explicit, evidence-based, auditable, maintainable, and reversible when new evidence or changed conditions justify reconsideration. The process is intentionally lightweight enough to remain practical while remaining clear enough to adopt without renegotiating first principles.
 
 ---
 
 ## 2. Decision Criteria
 
-Every non-trivial addition—including a tool, dependency, dataset, repository, architectural change, workflow, or product—is evaluated against the following criteria.
+Every non-trivial addition, including a tool, dependency, dataset, repository, architectural change, workflow, policy, or product, is evaluated against the following criteria.
 
 | Criterion | Question asked |
-|-----------|----------------|
+| --- | --- |
 | Necessity | Does this solve a real, current problem rather than a hypothetical future one? |
 | Simplicity | Is this the simplest solution that fully addresses the problem? |
-| Consistency | Does this align with existing standards and conventions rather than introducing a one-off pattern? |
-| Maintainability | Can this still be understood and evolved a year from now by a single maintainer? |
-| Reproducibility | Can this be recreated from scratch using documented procedures on free-tier infrastructure? |
+| Consistency | Does this align with existing standards and conventions rather than creating unnecessary one-off behavior? |
+| Maintainability | Can this remain understandable, operable, and evolvable over time without disproportionate maintenance burden? |
+| Reproducibility | Can this be recreated and verified from documented procedures without depending on access unavailable to the intended users or maintainers? |
 
-If a proposal fails more than one criterion, implementation is deferred until it satisfies the governance criteria.
+The criteria are not a scorecard. A proposal does not become acceptable merely because most criteria pass. Implementation is deferred while any material unresolved failure remains.
+
+Trade-offs are permitted when they are explicit, proportionate, and justified by evidence. A decision may accept a bounded weakness in one criterion when doing so is necessary to satisfy a more material requirement and the resulting risk is understood and documented.
 
 ---
 
@@ -32,71 +34,87 @@ If a proposal fails more than one criterion, implementation is deferred until it
 
 Work proceeds through explicit, ordered stages.
 
-1. Tasks are proposed with objectives, dependencies, and expected deliverables clearly defined.
-2. Each task is reviewed and approved before implementation begins.
-3. Once approved, a decision becomes the project's baseline unless a concrete technical issue—not a preference change—requires reconsideration.
-4. Completing a task means producing a real, usable deliverable (repository, document, deployment, implementation, or automation), not merely planning one.
+1. A task or decision is defined with its objective, evidence, dependencies, scope, and expected deliverable.
+2. Material alternatives and constraints are considered before implementation when they could change the decision boundary.
+3. The selected direction is approved before consequential implementation begins.
+4. Once accepted, the decision becomes the working baseline and is not reopened for preference alone. Reconsideration requires new evidence, changed conditions, or a material defect.
+5. Completion means producing and verifying the real deliverable, such as code, documentation, configuration, deployment, policy, or operational process, rather than merely planning it.
 
-This staged execution model applies across all Macro Evidence initiatives.
+This execution model applies across Macro Evidence initiatives. Repository-specific workflows may add implementation stages, but they must preserve the same decision discipline.
 
 ---
 
 ## 4. Review Cadence
 
-Governance documents and architectural decisions are reviewed weekly by the maintainer during the organization's current stage.
+Governance is reviewed when material change is proposed, when new evidence creates a concrete conflict or stale claim, and as a whole at least quarterly while Macro Evidence remains actively maintained. A periodic review may conclude that no change is needed.
 
-Any decision affecting an existing public interface, schema, API, governance principle, or long-term architectural direction must be documented through an Architecture Decision Record (ADR) rather than remaining implicit.
+A review date does not itself reopen an accepted decision. Reconsideration requires new evidence, changed conditions, or a material defect. Whole-corpus review checks for contradictions across canonical documents, stale current-state claims, unresolved proposals, and external dependencies whose material change could affect an existing rule or decision.
+
+Time-bound or externally dependent claims should be reverified when they materially affect a decision or public statement, rather than being assumed current because they were true at an earlier review.
 
 ---
 
 ## 5. Decision Records
 
-Non-trivial technical and organizational decisions are documented as Architecture Decision Records (ADRs).
+Non-trivial technical and organizational decisions are recorded as Architecture Decision Records (ADRs) when preserving the decision boundary, rationale, and consequences will materially help future maintenance or governance.
 
-Each ADR records the context, decision, and consequences of the decision.
+Repository-specific decisions live in that repository's own `decisions/` directory. Decisions that genuinely apply across multiple repositories or to Macro Evidence's organization-level structure live in this repository under [`decisions/`](decisions/).
 
-ADRs are recorded where the decision actually applies: repository-specific decisions live in that repository's own `decisions/` folder (e.g. [`macro-data-observatory/decisions/`](https://github.com/macro-evidence/macro-data-observatory/tree/main/decisions)); decisions that genuinely apply across multiple repositories or to the organization's structure itself are recorded in this repository under [`decisions/`](decisions/). The exact ADR format is defined in each location's own `decisions/README.md`.
+The organization-wide ADR contract, including placement, repository-local numbering, filenames, cross-repository references, lifecycle metadata, required sections, decision-boundary grammar, and index responsibilities, is defined in [`DOCUMENTATION_STANDARDS.md`](DOCUMENTATION_STANDARDS.md) §5. Repository indexes may add local orientation, but they must not redefine that shared contract.
+
+An ADR is not required for every implementation detail. Use an ADR when the decision has durable architectural, public-interface, policy, rights, governance, or cross-cutting consequences, or when the cost of later rediscovery would be material.
 
 ---
 
 ## 6. Governance Hierarchy
 
-Governance documents have explicit precedence.
+Governance documents have explicit precedence within their scopes.
 
-When guidance overlaps, higher-level documents take priority.
-
-| Level | Canonical Document |
-|--------|--------------------|
-| Organization mission, vision, scope | [`ORGANIZATION_CHARTER.md`](ORGANIZATION_CHARTER.md) |
+| Level | Canonical document |
+| --- | --- |
+| Organization mission, vision, platform roles, product relationships, durable direction | [`ORGANIZATION_CHARTER.md`](ORGANIZATION_CHARTER.md) |
 | Organization governance and decision-making | [`GOVERNANCE.md`](GOVERNANCE.md) |
-| Documentation standards and conventions | [`DOCUMENTATION_STANDARDS.md`](DOCUMENTATION_STANDARDS.md) |
-| Organization policies within their defined subject | [`CONTRIBUTION_POLICY.md`](CONTRIBUTION_POLICY.md); [`TRADEMARKS.md`](TRADEMARKS.md) |
-| Repository policies | Repository-specific governance documents |
-| Repository implementation details | Repository `README.md` and technical documentation |
+| Documentation and ADR standards | [`DOCUMENTATION_STANDARDS.md`](DOCUMENTATION_STANDARDS.md) |
+| Organization policies within their defined subjects | [`CONTRIBUTION_POLICY.md`](CONTRIBUTION_POLICY.md); [`TRADEMARKS.md`](TRADEMARKS.md) |
+| Approved legal instruments and their public operating process | [`legal/cla/`](legal/cla/) within the scope established by applicable policy and ADRs |
+| Repository policies and ADRs | Repository-specific governance documents and decisions |
+| Repository implementation and current runtime behavior | Repository documentation, source, configuration, and verified runtime evidence |
 
-The hierarchy is scope-aware. Precedence applies when documents genuinely govern the same question; a higher-listed document does not become canonical for a subject outside its defined scope. Organization policies at the same level are canonical within their own subjects, and their listing order does not allow one to override another outside its scope. If two scope-specific policies genuinely conflict, the conflict must be reconciled deliberately under the higher-level organization and governance rules rather than resolved by silently choosing one.
+Precedence is scope-aware. A higher-listed document does not become canonical for a subject outside its defined role. Policies at the same level govern their own subjects; listing order does not let one silently override another.
 
-Repository documentation may extend organization standards but must never contradict them.
+When two canonical sources appear to conflict, resolve the conflict by scope, freshness, and authority rather than silently selecting the more convenient statement. Repository documentation may extend organization standards but must not contradict them.
 
 ---
 
 ## 7. Versioning Foundational Documents
 
-This charter `GOVERNANCE.md`, [`ORGANIZATION_CHARTER.md`](ORGANIZATION_CHARTER.md), [`DOCUMENTATION_STANDARDS.md`](DOCUMENTATION_STANDARDS.md), [`CONTRIBUTION_POLICY.md`](CONTRIBUTION_POLICY.md), and [`TRADEMARKS.md`](TRADEMARKS.md) are versioned independently using Semantic Versioning (`MAJOR.MINOR.PATCH`).
+This charter, [`ORGANIZATION_CHARTER.md`](ORGANIZATION_CHARTER.md), [`DOCUMENTATION_STANDARDS.md`](DOCUMENTATION_STANDARDS.md), [`CONTRIBUTION_POLICY.md`](CONTRIBUTION_POLICY.md), and [`TRADEMARKS.md`](TRADEMARKS.md) are versioned independently using Semantic Versioning (`MAJOR.MINOR.PATCH`).
 
 | Version | Meaning |
-|----------|---------|
-| **MAJOR** | Fundamental governance principles or execution models change. |
-| **MINOR** | New governance capabilities, sections, or materially expanded guidance are introduced. |
-| **PATCH** | Editorial, formatting, wording, or clarification changes that do not alter governance policy. |
+| --- | --- |
+| **MAJOR** | Fundamental governance principles, authority boundaries, or execution models change. |
+| **MINOR** | New governance capabilities, materially expanded rules, or new durable subject boundaries are introduced. |
+| **PATCH** | Editorial, formatting, factual-correction, or clarification changes that do not alter policy. |
 
-Every released version includes a changelog entry.
+Every released version includes a changelog entry. A version enters release history only when that version is published in canonical repository history. Uncommitted candidates do not create historical releases.
+
+When one release contains changes of different levels, use the highest applicable SemVer level. Changelog entries should distinguish policy/capability changes from mechanical or editorial cleanup so the version choice remains auditable.
 
 Governance documents are never silently modified.
 
 ---
 
 ## Changelog
+
+### 2.0.0 (2026-09-24)
+
+- Replaces the earlier weekly review model with event-driven review plus a quarterly whole-corpus review, while keeping reconsideration tied to new evidence, changed conditions, or material defects.
+- Reframes decision criteria as material gates rather than a scorecard and clarifies proportionate trade-offs.
+- Makes the shared ADR contract, repository implementation truth, legal-instrument scope, and release-history rules explicit in the governance hierarchy.
+- Makes governance records durable public documents that are self-contained and understandable from their public context.
+- Clarifies that accepted decisions are not cosmetically rewritten to fit later conventions and that material changes require a new decision.
+- Preserves all previously released changelog entries exactly as historical record.
+- MAJOR — replaces the fixed weekly review cadence with event-driven plus quarterly whole-corpus review and reframes decision criteria from a scorecard into material gates; the shared ADR contract and governance hierarchy precedence are unchanged.
 
 ### 1.5.0 (2026-09-03)
 
