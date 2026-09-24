@@ -1,6 +1,6 @@
 # Macro Evidence — Organization & Platform Charter
 
-> Version 1.2.0 · Active · Last updated 2026-08-20
+> Version 1.3.0 · Active · Last updated 2026-09-24
 
 ---
 
@@ -8,101 +8,81 @@
 
 ### Mission
 
-Macro Evidence builds open macroeconomic data infrastructure designed around provenance, validation, reproducibility, and transparency — engineered as one coherent, extensible system rather than a collection of disconnected pipelines.
+Macro Evidence builds open macroeconomic data infrastructure around provenance, validation, reproducibility, and transparency. It develops shared foundations, products, reference layers, and interfaces with clear canonical ownership.
 
 ### Vision
 
-To become a lasting, trusted steward of open macroeconomic data infrastructure — built incrementally, on evidence, one disciplined decision at a time.
+To become a lasting, trusted steward of open macroeconomic data infrastructure, built incrementally on evidence, one disciplined decision at a time.
 
-### Engineering Philosophy
+### Engineering philosophy
 
-- Engineering rigor over presentation
-- Reproducibility over one-off solutions
-- Transparency over opacity
-- Maintainability over short-term convenience
-- Modular architecture over monoliths
-- Documentation-first development
-- Incremental capability growth over speculative scope
+- engineering rigor over presentation;
+- reproducibility over one-off solutions;
+- transparency over opacity;
+- maintainability over short-term convenience;
+- modular architecture over monoliths;
+- documentation alongside implementation; and
+- incremental capability growth over speculative scope.
 
 ---
 
-## 2. Flagship Platform — Macro Data Observatory (MDO)
+## 2. Flagship and Foundational Platform — Macro Data Observatory (MDO)
 
-### Purpose
+Macro Data Observatory (MDO) is Macro Evidence's flagship and foundational macro-data platform.
 
-Macro Data Observatory (MDO) is the flagship and foundational platform of Macro Evidence.
+Its role is to acquire, validate, structure, and maintain macroeconomic data from authoritative public sources through reproducible engineering. MDO owns the canonical technical and data truth for its data sources, series, metadata, transformations, interfaces, and runtime behavior.
 
-It is a long-term data engineering platform that acquires, processes, organizes, and maintains macroeconomic data from authoritative public sources through disciplined engineering practice. MDO is infrastructure-led: catalogue, research, visualization, and programmatic-access experiences build on the same underlying data system rather than defining separate products or data foundations.
+MDO's durable objectives are to:
 
-### Core Objectives
+- maintain one coherent macroeconomic data foundation across authoritative public sources;
+- normalize heterogeneous source data into consistent, researchable series;
+- make provenance, validation, reproducibility, and maintainability explicit infrastructure requirements;
+- provide the shared macro-data foundation for Macro Evidence products and interfaces that require canonical macroeconomic data; and
+- keep implementation and architectural decisions documented in MDO's own canonical repository and runtime evidence.
 
-- Build and maintain one coherent macroeconomic data foundation across authoritative public sources
-- Normalize heterogeneous source data into consistent, researchable economic series
-- Apply validation, reproducibility, provenance, and maintainability as explicit infrastructure requirements
-- Provide the shared foundation for Macro Evidence's catalogue, research, programmatic-access, and future product layers
-- Keep architecture and implementation decisions documented and auditable as the platform evolves
-
-### Engineering Scope
-
-- Data acquisition from authoritative public sources
-- Validation, cleaning, and transformation
-- Canonical series storage and metadata
-- Reproducible ETL workflows
-- Provenance and data-quality infrastructure
-- Architectural Decision Records (ADRs) and technical documentation
-
-### Engineering Standards
-
-- Organization governance (see [`GOVERNANCE.md`](GOVERNANCE.md))
-- Standardized naming conventions (see [`DOCUMENTATION_STANDARDS.md`](DOCUMENTATION_STANDARDS.md) §5)
-- Modular repository organization
-- Reproducible development environments using free-tier infrastructure
-- Conventional Commits (see [`DOCUMENTATION_STANDARDS.md`](DOCUMENTATION_STANDARDS.md) §6)
-- Architectural review cadence defined in [`GOVERNANCE.md`](GOVERNANCE.md)
-- Continuous complexity management
-
-### Development Roadmap
-
-MDO has demonstrated through live implementation and verification that one canonical system can ingest, validate, and structure macroeconomic data from multiple independent sources.
-
-Development continues by strengthening that shared foundation and extending its discoverability, research usability, and accessibility as evidence justifies each addition. This is directional guidance, not a fixed sequence of features or a substitute for the current MDO repository and runtime evidence.
-
-Pacing is decided against evidence as work progresses, not fixed in advance. Non-trivial architectural and scope decisions are recorded through the applicable Architecture Decision Record process (see [`GOVERNANCE.md`](GOVERNANCE.md)) rather than committed to here ahead of implementation evidence.
+MDO's implementation details, current provider coverage, live runtime state, schemas, and release status belong to the MDO repository and verified runtime evidence rather than this organization charter.
 
 ---
 
 ## 3. Product Ecosystem
 
-| Layer | Entity | Status |
-|---|---|---|
-| Organization | Macro Evidence | Governance, identity, stewardship, and organizational infrastructure |
-| Flagship and foundational platform | Macro Data Observatory | Under active development |
+Macro Evidence may develop products, interfaces, and reference layers with distinct roles while preserving one coherent macro-data foundation.
 
-Future products extend, expose, or operate on Macro Data Observatory's shared infrastructure rather than recreating the same underlying macroeconomic-data foundation in parallel. Product form may change as Macro Evidence grows, but the one-foundation relationship remains the default unless a later organizational decision deliberately changes it.
+| Entity | Organization-level role | Canonical boundary |
+| --- | --- | --- |
+| Macro Evidence | Organization, governance, identity, and stewardship | Organization governance and public institutional records |
+| Macro Data Observatory (MDO) | Flagship and foundational macro-data platform | MDO repository, canonical sources, decisions, and verified runtime evidence |
+| Macro Data Dictionary (MDD) | Organization-level reference and explanatory layer | MDD repository and future MDD-specific canonical records |
 
-Each material addition is evaluated against the decision criteria in [`GOVERNANCE.md`](GOVERNANCE.md) before implementation begins.
+MDD is an organization-owned sibling of MDO under Macro Evidence, not a child or subproject of MDO. It may explain macroeconomic terminology, metadata concepts, and reference material that applies across Macro Evidence products.
 
----
+Where MDD presents MDO-specific technical or data facts, those facts derive from MDO's canonical sources. MDD does not create an independent competing source of truth for MDO's implementation or data.
 
-## 4. Current Status
+Future products that require the same canonical macroeconomic data should build on, consume, expose, or otherwise operate on MDO's shared foundation rather than recreating a parallel macro-data foundation. Reference layers may span products without becoming independent data foundations.
 
-| Attribute | Description |
-|---|---|
-| Domain | Macroeconomic data systems |
-| Maintainers | One |
-| Time horizon | Multi-year |
+Each new material product or layer is evaluated through the governance decision process before implementation. Product-specific architecture, URLs, identity, licensing, schemas, and feature scope remain repository-level or separately governed decisions unless they genuinely require organization-wide treatment.
 
 ---
 
-## 5. Long-Term Vision
+## 4. Durable Direction
 
-Macro Evidence is intended to mature into an ecosystem of professionally engineered products centered on open, trustworthy macroeconomic data infrastructure, with Macro Data Observatory serving as the shared foundational platform.
+Macro Evidence is intended to mature as an ecosystem of professionally engineered public infrastructure centered on trustworthy macroeconomic data.
 
-As MDO's infrastructure matures, additional products build on that foundation rather than forming parallel or duplicate data infrastructures. Macro Evidence's identity rests on stewarding one coherent system while allowing its interfaces, products, and implementation choices to evolve with evidence.
+Growth remains evidence-paced. New capabilities are added when they solve a demonstrated problem and can be integrated without fragmenting canonical ownership, duplicating the macro-data foundation, or creating maintenance obligations disproportionate to their value.
+
+Macro Evidence's organizational identity rests on stewarding one coherent infrastructure system while allowing its products, interfaces, reference layers, and implementation choices to evolve as evidence changes.
 
 ---
 
 ## Changelog
+
+### 1.3.0 (2026-09-24)
+
+- Adds the organization-level MDD relationship while keeping MDO as the flagship and foundational macro-data platform.
+- Reframes the mission around durable macroeconomic infrastructure rather than a collection of isolated processing components, while preserving clear canonical ownership.
+- Clarifies that products, reference layers, and interfaces may evolve without creating competing sources of truth.
+- Preserves all previously released changelog entries exactly as historical record.
+- MINOR — adds the organization-level MDD relationship and reframes the mission statement's supporting language; MDO's role as flagship and foundational platform and the organization/platform architecture are unchanged.
 
 ### 1.2.0 (2026-08-20)
 
