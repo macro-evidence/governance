@@ -1,7 +1,7 @@
 # 0003. License .github community infrastructure under CC BY-SA 4.0
 
-**Status:** Accepted
-**Date:** 2026-08-21
+**Status:** Superseded
+**Superseded by:** [decision 0011](0011-use-mixed-licensing-for-github-community-content-and-executable-automation.md)
 
 ## Context
 
