@@ -1,7 +1,7 @@
 # 0002. License governance content under CC BY-SA 4.0
 
-**Status:** Accepted
-**Date:** 2026-08-21
+**Status:** Superseded
+**Superseded by:** [decision 0010](0010-preserve-cc-by-sa-default-with-explicit-legal-form-exceptions.md)
 
 ## Context
 
