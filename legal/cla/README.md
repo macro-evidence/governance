@@ -4,13 +4,15 @@ This directory contains Macro Evidence's public contributor-agreement reference 
 
 ## Files
 
-- `ICLA.md` - Individual Contributor License Agreement reference form.
-- `ECLA.md` - Entity Contributor License Agreement reference form.
-- `CONTRIBUTOR_AGREEMENT_PROCESS.md` - coverage, identity/account binding, execution, private-record, suspension, versioning, and merge-enforcement process.
-- `CONTRIBUTOR_AGREEMENT_PRIVACY.md` - privacy treatment for contributor-rights and agreement records.
-- `THIRD_PARTY_MATERIAL_PROCESS.md` - provenance and rights-review process for non-owned, restricted, or generated material.
-- `GITHUB_ENFORCEMENT.md` - security invariants, token domains, caller requirements, suspension/revalidation, and key-rotation rules for the merge gate.
-- `PROVENANCE_AND_CUSTOMIZATION.md` - upstream Harmony provenance and Macro Evidence customization map.
+| Document | Covers |
+| --- | --- |
+| [ICLA.md](ICLA.md) | Individual Contributor License Agreement reference form |
+| [ECLA.md](ECLA.md) | Entity Contributor License Agreement reference form |
+| [CONTRIBUTOR_AGREEMENT_PROCESS.md](CONTRIBUTOR_AGREEMENT_PROCESS.md) | Coverage, identity/account binding, execution, private-record, suspension, versioning, and merge-enforcement process |
+| [CONTRIBUTOR_AGREEMENT_PRIVACY.md](CONTRIBUTOR_AGREEMENT_PRIVACY.md) | Privacy treatment for contributor-rights and agreement records |
+| [THIRD_PARTY_MATERIAL_PROCESS.md](THIRD_PARTY_MATERIAL_PROCESS.md) | Provenance and rights-review process for non-owned, restricted, or generated material |
+| [GITHUB_ENFORCEMENT.md](GITHUB_ENFORCEMENT.md) | Security invariants, token domains, caller requirements, suspension/revalidation, and key-rotation rules for the merge gate |
+| [PROVENANCE_AND_CUSTOMIZATION.md](PROVENANCE_AND_CUSTOMIZATION.md) | Upstream Harmony provenance and Macro Evidence customization map |
 
 Publishing these reference and process files does not itself execute a contributor agreement or activate the GitHub merge gate. Agreement execution and repository enforcement become active only through the execution, private-record, and activation controls defined by the Contributor Agreement Process and GitHub Enforcement documentation.
 
