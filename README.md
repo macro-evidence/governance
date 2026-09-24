@@ -7,30 +7,39 @@
 ## Contents
 
 | Document | Covers |
-|---|---|
-| [ORGANIZATION_CHARTER.md](ORGANIZATION_CHARTER.md) | Organization mission, vision, engineering philosophy, flagship platform, product ecosystem |
-| [GOVERNANCE.md](GOVERNANCE.md) | Governance principles, decision-making, repository hierarchy, ADRs, versioning |
-| [DOCUMENTATION_STANDARDS.md](DOCUMENTATION_STANDARDS.md) | Documentation principles, repository documentation, writing standards, naming conventions, Conventional Commits |
+| --- | --- |
+| [ORGANIZATION_CHARTER.md](ORGANIZATION_CHARTER.md) | Organization mission, vision, platform roles, product relationships, durable direction |
+| [GOVERNANCE.md](GOVERNANCE.md) | Decision criteria, execution model, review cadence, governance hierarchy, versioning |
+| [DOCUMENTATION_STANDARDS.md](DOCUMENTATION_STANDARDS.md) | Documentation ownership, public-boundary rules, ADR contract, verification, naming, commit conventions |
 | [TRADEMARKS.md](TRADEMARKS.md) | Trademark, brand, and organizational identity policy |
 | [CONTRIBUTION_POLICY.md](CONTRIBUTION_POLICY.md) | Organization-wide contribution participation, acceptance, contributor-rights, and stewardship policy |
-| [decisions/](decisions/) | Cross-cutting Architecture Decision Records (ADRs) only — repository-specific ADRs live in that repository's own `decisions/` |
+| [decisions/](decisions/) | Cross-cutting Architecture Decision Records; repository-specific decisions remain with the repository they govern |
+| [legal/cla/](legal/cla/) | Contributor-agreement reference forms, execution/privacy/provenance process, and third-party-material handling |
 
 ## Versioning
 
-Each document above is versioned independently (`MAJOR.MINOR.PATCH`) with its own changelog. There is no single version number for this repository as a whole — see [`GOVERNANCE.md`](GOVERNANCE.md) §7 for what constitutes each level of change.
+Each independently versioned governance or policy document carries its own version and changelog. There is no single version number for this repository as a whole; see [`GOVERNANCE.md`](GOVERNANCE.md) §7.
 
 ## Scope
 
-This repository holds cross-cutting governance: decisions and conventions that apply across every Macro Evidence repository. Anything specific to one platform — setup instructions, architecture particular to that codebase — belongs in that repository instead, per [`DOCUMENTATION_STANDARDS.md`](DOCUMENTATION_STANDARDS.md) §3.
+This repository owns organization-wide governance, policy, documentation standards, and genuinely cross-cutting decisions. Repository-specific architecture, implementation, setup, runtime behavior, and technical decisions remain with the repository they govern.
 
 ## Community and participation
 
 The organization-wide Contribution Policy is canonical here because it defines cross-repository participation, acceptance, and contributor-rights principles.
 
-GitHub-specific contribution mechanics, the Code of Conduct, and security reporting remain in [`macro-evidence/.github`](https://github.com/macro-evidence/.github) and are not duplicated here.
+GitHub-specific contribution mechanics, the Code of Conduct, security reporting, and default community-health templates remain in [`macro-evidence/.github`](https://github.com/macro-evidence/.github).
 
-## License
+## Verification
 
-Licensed under [Creative Commons Attribution-ShareAlike 4.0 International](LICENSE) (CC BY-SA 4.0).
+This documentation-only repository uses a local Markdown verification path rather than dedicated CI. With Node.js 22 or later available, run:
 
-That license governs the repository content; it does not itself grant rights to use Macro Evidence's names, marks, or visual identity. See the separate [Trademarks Policy](TRADEMARKS.md).
+```text
+npx --yes markdownlint-cli@0.49.1 "**/*.md" --ignore-path .gitignore
+```
+
+The repository configuration enables the standard `markdownlint` rule set except line-length enforcement (`MD013`). The direct tool version is pinned; verification tooling should be re-evaluated when its dependency or security state materially changes.
+
+## Licensing
+
+The repository default and file-specific exceptions are defined by [`LICENSING.md`](LICENSING.md). The repository `LICENSE` file supplies the default CC BY-SA 4.0 terms. Repository licensing does not itself grant rights to use Macro Evidence's names, marks, or visual identity; see [`TRADEMARKS.md`](TRADEMARKS.md).
