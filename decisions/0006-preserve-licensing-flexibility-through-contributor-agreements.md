@@ -1,7 +1,7 @@
 # 0006. Preserve licensing flexibility through contributor agreements
 
-**Status:** Accepted
-**Date:** 2026-09-02
+**Status:** Superseded
+**Superseded by:** [decision 0009](0009-adopt-a-harmony-based-contributor-rights-system.md)
 
 ## Context
 
@@ -13,7 +13,7 @@ The issue is most visible in Macro Data Observatory (MDO), whose public code is 
 
 A Developer Certificate of Origin can certify that a contributor has the right to submit work under the project's stated license, but it does not by itself provide the broader sublicensing or relicensing rights required for this objective. Copyright assignment would centralize ownership but is stronger than necessary for the current requirement and would impose greater contributor friction.
 
-## Decisions
+## Decision
 
 Before merging an external copyrightable contribution into a Macro Evidence repository, require coverage by an approved contributor agreement. A later legally reviewed implementation may define a narrow exception where a proposed change is not copyrightable or otherwise does not require contributor-rights coverage; no such exception is presumed by this decision.
 
