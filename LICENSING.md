@@ -6,8 +6,8 @@ The repository's default license is **Creative Commons Attribution-ShareAlike 4.
 
 The following files are adapted from the Harmony Contributor License Agreement Version 1.0 templates and are distributed under **Creative Commons Attribution 3.0 Unported (CC BY 3.0)** with the attribution/provenance notice contained in each form:
 
-- `legal/cla/MACRO_EVIDENCE_ICLA_v1.0.0.md`
-- `legal/cla/MACRO_EVIDENCE_ECLA_v1.0.0.md`
+- `legal/cla/ICLA.md`
+- `legal/cla/ECLA.md`
 - corresponding approved reference-format derivatives (`.docx` and `.pdf`) when published from the same legal terms.
 
 Upstream Harmony source and policy information: <https://www.harmonyagreements.org/agreements> and <https://www.harmonyagreements.org/policies>.
