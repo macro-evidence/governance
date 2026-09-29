@@ -1,6 +1,6 @@
 # Macro Evidence - GitHub Contributor-Rights Enforcement
 
-> Version 1.0.0 · Activation pending · Last updated 2026-09-24
+> Version 1.0.0 · Active · Last updated 2026-09-29
 
 ---
 
