@@ -1,6 +1,6 @@
 # Macro Evidence - GitHub Contributor-Rights Enforcement
 
-> Version 1.0.0 · Active · Last updated 2026-09-29
+> Version 1.0.1 · Active · Last updated 2026-09-30
 
 ---
 
@@ -113,6 +113,12 @@ The v1 configuration-list design is intentionally small-scale. Before token volu
 ---
 
 ## Changelog
+
+### 1.0.1 (2026-09-30)
+
+- Changes the document status from "Activation pending" to "Active" following hosted verification of the merge gate against a fork pull request.
+- No security invariant, coverage domain, caller-workflow requirement, or revocation/rotation rule changed.
+- PATCH — status update only; the specification's requirements are unchanged.
 
 ### 1.0.0 (2026-09-24)
 
