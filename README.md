@@ -1,8 +1,6 @@
 # Macro Evidence — Governance
 
-> Canonical governance for the Macro Evidence organization and its platforms.
-
----
+Canonical governance for the Macro Evidence organization and its platforms.
 
 ## Contents
 
