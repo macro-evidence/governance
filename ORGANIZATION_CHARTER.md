@@ -1,6 +1,6 @@
 # Macro Evidence — Organization & Platform Charter
 
-> Version 1.3.0 · Active · Last updated 2026-09-24
+> Version 1.3.1 · Active · Last updated 2026-10-06
 
 ---
 
@@ -8,7 +8,7 @@
 
 ### Mission
 
-Macro Evidence builds open macroeconomic data infrastructure around provenance, validation, reproducibility, and transparency. It develops shared foundations, products, reference layers, and interfaces with clear canonical ownership.
+Macro Evidence builds open macroeconomic data infrastructure around provenance, validation, reproducibility, and transparency. It develops shared foundations, products, reference layers, and interfaces, each with clear canonical ownership.
 
 ### Vision
 
@@ -75,6 +75,13 @@ Macro Evidence's organizational identity rests on stewarding one coherent infras
 ---
 
 ## Changelog
+
+### 1.3.1 (2026-10-06)
+
+- Clarifies the Mission's second sentence so that clear canonical ownership applies to each of the listed shared foundations, products, reference layers, and interfaces rather than only to interfaces.
+- Records that release 1.3.0 also changed the Vision's punctuation, replacing an em dash with a comma, without a changelog entry; the Vision's wording is otherwise unchanged.
+- Preserves all previously released changelog entries exactly as historical record.
+- PATCH — clarification and a changelog correction only; the Mission's meaning, the Vision, platform roles, and product relationships are unchanged.
 
 ### 1.3.0 (2026-09-24)
 
