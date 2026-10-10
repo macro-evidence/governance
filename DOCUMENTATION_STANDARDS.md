@@ -1,6 +1,6 @@
 # Macro Evidence — Documentation Standards
 
-> Version 1.6.0 · Active · Last updated 2026-09-24
+> Version 1.7.0 · Active · Last updated 2026-10-11
 
 ---
 
@@ -54,7 +54,8 @@ For independently versioned governance and policy documents:
 
 - the title is followed by one version/status blockquote;
 - `## Changelog` contains one level-three heading per released version in the form `### MAJOR.MINOR.PATCH (YYYY-MM-DD)`, newest first;
-- each release heading is followed by a bulleted summary of material changes;
+- each release heading is followed by a bulleted summary whose first bullet states the change class (`MAJOR`, `MINOR`, or `PATCH`) and a concise rationale under the owning policy's definitions, and whose later bullets record notable changes rather than commit history; an initial release states "Initial version." in place of a change class;
+- historical entries are not rewritten to adopt this order unless a factual defect makes correction necessary;
 - only a version actually published in canonical repository history enters the changelog as a released version;
 - an unreleased revision uses explicit candidate/not-active metadata and, if a change summary is useful, records it under `## Candidate changes for MAJOR.MINOR.PATCH` outside the released changelog;
 - uncommitted candidate numbering does not create release history; and
@@ -210,6 +211,12 @@ Commit guidelines:
 ---
 
 ## Changelog
+
+### 1.7.0 (2026-10-11)
+
+- MINOR — standardizes how each release entry in the changelogs of independently versioned governance and policy documents is written, by requiring its first bullet to state the change class and a concise rationale; the existing version-heading form, ordering, and release-publication rules are unchanged.
+- Requires later bullets to record notable changes rather than commit history, and requires an initial release to state "Initial version." in place of a change class.
+- Preserves all previously released changelog entries exactly as historical record unless a factual defect makes correction necessary.
 
 ### 1.6.0 (2026-09-24)
 
