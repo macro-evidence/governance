@@ -33,7 +33,7 @@ GitHub-specific contribution mechanics, the Code of Conduct, security reporting,
 This documentation-only repository uses a local Markdown verification path rather than dedicated CI. With Node.js 22 or later available, run:
 
 ```text
-npx --yes markdownlint-cli@0.49.1 "**/*.md" --ignore-path .gitignore
+npx --yes markdownlint-cli@0.49.1 "**/*.md"
 ```
 
 The repository configuration enables the standard `markdownlint` rule set except line-length enforcement (`MD013`). The direct tool version is pinned; verification tooling should be re-evaluated when its dependency or security state materially changes.
