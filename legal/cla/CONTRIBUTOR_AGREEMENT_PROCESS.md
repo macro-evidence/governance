@@ -1,6 +1,6 @@
 # Macro Evidence - Contributor Agreement Process
 
-> Version 1.0.0 · Active · Last updated 2026-09-24
+> Version 1.0.1 · Active · Last updated 2026-10-25
 
 ---
 
@@ -178,7 +178,7 @@ A material merger, dissolution, change of legal identity, change of authority, o
 
 A contributor agreement cannot grant rights that the signatory does not own, control, or have authority to license. Contributors must follow the published Third-Party Material Process and disclose applicable restrictions and provenance. Where material has multiple material co-authors or rightsholders, every necessary rights interest must be covered by an applicable agreement, licence, permission, employer/entity authorization, or other documented sufficient basis before merge; one pull-request author cannot create coverage for another rightsholder merely by submitting the work.
 
-For a substantial, binary, copied, generated/model-assisted, employer-controlled, patent-sensitive, security-sensitive, unusually licensed, or otherwise high-risk Contribution, Macro Evidence may require enhanced evidence before merge, including upstream locations, licence texts, author/rights-holder confirmation, generation or transformation history, source-to-output comparison, reproducible build or generation instructions, or other evidence proportionate to the risk. Git author metadata and a contributor's self-description are not conclusive proof of ownership or authority.
+For a substantial, binary, copied, employer-controlled, patent-sensitive, security-sensitive, unusually licensed, or otherwise high-risk Contribution, or a Contribution containing generated or model-assisted material with unclear source history, Macro Evidence may require enhanced evidence before merge, including upstream locations, licence texts, author/rights-holder confirmation, generation or transformation history, source-to-output comparison, reproducible build or generation instructions, or other evidence proportionate to the risk. Git author metadata and a contributor's self-description are not conclusive proof of ownership or authority.
 
 Contributors and entity signatories must notify Macro Evidence at [legal@macro-evidence.com](mailto:legal@macro-evidence.com) if they later become aware that a material representation in an executed agreement was inaccurate or if identity, entity authority, or provenance relevant to future Contributions changes.
 
@@ -199,6 +199,11 @@ Questions about agreement execution, entity authority, account binding, coverage
 ---
 
 ## Changelog
+
+### 1.0.1 (2026-10-25)
+
+- PATCH — aligns the §12 enhanced-review trigger with Third-Party Material Process §7 and ICLA §3(g) without changing any obligation.
+- Moves generated or model-assisted material out of the list of high-risk categories into its own trigger, which applies when its source history is unclear.
 
 ### 1.0.0 (2026-09-24)
 
